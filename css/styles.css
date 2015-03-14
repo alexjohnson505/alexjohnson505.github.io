@@ -92,6 +92,7 @@ hr {
 	border: 0 none;
 	border-top: 1px solid #eee;
 }
+
 ul.filter {
 	margin-bottom: 10px;
 }
@@ -102,7 +103,7 @@ ul.filter li {
 	margin-left: 10px;
 	cursor: pointer;
 }
-.active {
+ul.filter li.active {
 	background: #ba372f;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 5px;
@@ -110,18 +111,23 @@ ul.filter li {
 	-webkit-box-shadow: 1px 1px 0px #333;
 	color: #fff;
 }
-#Grid .preview {
+
+#grid .preview {
 	height: 250px; 
 	background-color: orange;
 	border: 2px solid white;
 }
-#Grid li {
+#grid li {
 	list-style: none;
 }
-#Grid .preview a {
+#grid .preview a {
 	color: #fff;
 	width: 100%;
 	text-align: center;
   	display: block;
   	margin-top: 20px;
+}
+
+img.profile {
+	max-width: 100%;
 }

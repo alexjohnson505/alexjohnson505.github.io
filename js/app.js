@@ -13,15 +13,15 @@ var app = angular.module('app', [
 app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/posts', {
+      when('/', {
         templateUrl: 'templates/home.tpl.html',
-        controller: 'PhoneListCtrl'
+        controller: 'HomeCtrl'
       }).
-      when('/posts/:phoneId', {
+      when('/posts/:postId', {
         templateUrl: 'templates/post.tpl.html',
-        controller: 'PhoneDetailCtrl'
+        controller: 'PostCtrl'
       }).
       otherwise({
-        redirectTo: '/posts'
+        redirectTo: '/'
       });
   }]);

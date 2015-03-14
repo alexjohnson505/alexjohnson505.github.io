@@ -111,10 +111,17 @@ ul.filter li {
 	color: #fff;
 }
 #Grid .preview {
-	height: 300px; 
+	height: 250px; 
 	background-color: orange;
 	border: 2px solid white;
 }
 #Grid li {
 	list-style: none;
+}
+#Grid .preview a {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+  	display: block;
+  	margin-top: 20px;
 }

@@ -58,10 +58,6 @@ body {
 	/* prevent 'scroll-bar jump' */
 	overflow-y: scroll;
 }
-.wrapper {
-	margin: 30px auto 0 auto;
-	max-width: 875px;
-}
 h1 {
 	margin-bottom: 30px;
 }
@@ -114,70 +110,11 @@ ul.filter li {
 	-webkit-box-shadow: 1px 1px 0px #333;
 	color: #fff;
 }
-#post {
-	width: 875;
-}
-#Grid {
-	width: 875px;
-	text-align: justify;
-	font-size: 0.1px;
-}
-
-#Grid:after{
-	content: '';
-	display: inline-block;
-	width: 100%;
+#Grid .preview {
+	height: 300px; 
+	background-color: orange;
+	border: 2px solid white;
 }
 #Grid li {
-	display: inline-block;
-	opacity: 1;
-	width: 280px;
-	height: 280px;
-	vertical-align: top;
-	margin-bottom: 20px;
-}
-#Grid .mix{
-	/*display: none;*/
-	/*opacity: 0;*/
-	width: 280px;
-	height: 280px;
-	vertical-align: top;
-	margin-bottom: 20px;
-	background: #ccc;
-	color: #fff;
-
-	font-size: 20px;
-	text-align: center;
-	line-height: 1.4em;
-}
-#Grid span {
-	padding: 7px;
-	margin-top: 20px;
-	display: block;
-	background-color: #000;
-	opacity: .8;
-}
-#Grid a {
-	color: #fff;
-	font-weight: 200;
-	display: inline-block;
-	height: 280px;
-}
-
-#Grid .gap{
-	display: inline-block;
-	width: 280px;
-}
-.breadcrumbs {
-	margin-bottom: 10px;
-	font-size: 14px;
-}
-a {
-	color: #f74c31;
-}
-.cf-hidden {
-	display: none;
-}
-.cf-invisible {
-	visibility: hidden;
+	list-style: none;
 }

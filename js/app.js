@@ -14,11 +14,11 @@ app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/posts', {
-        templateUrl: 'templates/template.tpl.html',
+        templateUrl: 'templates/home.tpl.html',
         controller: 'PhoneListCtrl'
       }).
       when('/posts/:phoneId', {
-        templateUrl: 'templates/template.tpl.html',
+        templateUrl: 'templates/post.tpl.html',
         controller: 'PhoneDetailCtrl'
       }).
       otherwise({

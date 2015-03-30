@@ -11,13 +11,12 @@
 			<p>This section of the site is in development. The goal is to build a re-usable Angular.js front-end for sorting and organizing posts such as content sections or portfolio items.</p>
 
 		</div>
-		
-	
 	</div>
+
 	<hr />
 
 	<!-- Filter Controls -->
-	<div class="controls">
+	<!-- <div class="controls">
 		<ul class="filter">
 			<li class="filter active" data-filter="show_all">Show All</li>
 			<li class="filter" data-filter="web">Web Development</li>
@@ -26,60 +25,76 @@
 			<li class="filter" data-filter="design">Web Design</li>
 			<li class="filter" data-filter="graphic">Graphic Design</li>
 		</ul>
-	</div>
+	</div>-->
 
-	<hr />
 	
 	<div class="grid">
 		<figure class="effect-julia">
-			<img src="http://placehold.it/480x360" alt="img21">
+			<img src="http://placehold.it/480x360">
 			<figcaption>
-				<h2>Passionate <span>Julia</span></h2>
+				<h2>Assignment <span>MEAN</span></h2>
 				<div>
-					<p>Julia dances in the deep dark</p>
-					<p>She loves the smell of the ocean</p>
-					<p>And dives into the morning light</p>
+					<p>Using Node.js and Angular</p>
+					<p>to create a CRUD single page app</p>
+					<p>for data management.</p>
 				</div>
-				<a href="#">View more</a>
+				<a href="http://nodejs-johnsoncs4550.rhcloud.com/#/courses">View more</a>
 			</figcaption>			
 		</figure>
 		<figure class="effect-julia">
-			<img src="http://placehold.it/480x360" alt="img22">
+			<img src="http://placehold.it/480x360">
 			<figcaption>
-				<h2>Passionate <span>Julia</span></h2>
+				<h2>Assignment <span>jQuery</span></h2>
 				<div>
-					<p>Julia dances in the deep dark</p>
-					<p>She loves the smell of the ocean</p>
-					<p>And dives into the morning light</p>
+					<p>Data Management using everyone's</p>
+					<p>favorite DOM manipulation library</p>
 				</div>
-				<a href="#">View more</a>
+				<a href="http://net4.ccs.neu.edu/home/alexj/assignments/jquery/profile.html">View more</a>
+			</figcaption>			
+		</figure>
+		<figure class="effect-julia">
+			<img src="http://placehold.it/480x360">
+			<figcaption>
+				<h2>Assignment <span>CSS</span></h2>
+				<div>
+					<p>An example of CSS Frameworks</p>
+					<p>using Boostrap for templating</p>
+					<p>for data management.</p>
+				</div>
+				<a href="http://net4.ccs.neu.edu/home/alexj/assignments/css/profile.html">View more</a>
+			</figcaption>			
+		</figure>
+		<figure class="effect-julia">
+			<img src="http://placehold.it/480x360">
+			<figcaption>
+				<h2>Assignment <span>HTML</span></h2>
+				<div>
+					<p>A basic example of HTML</p>
+					<p>Creating the DOM for a web page.</p>
+				</div>
+				<a href="http://net4.ccs.neu.edu/home/alexj/assignments/html/studyList.html">View more</a>
 			</figcaption>			
 		</figure>
 	</div>
 
-	<!-- Thumbnails -->
-	<ul id="grid">
-		<li class="preview col-md-3 col-sm-6 col-xs-12"><a target="_blank" href="http://net4.ccs.neu.edu/home/alexj/assignments/html/studyList.html">Assignment 01 - HTML</a></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"><a target="_blank" href="http://net4.ccs.neu.edu/home/alexj/assignments/css/profile.html">Assignment 02 - CSS</a></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"><a target="_blank" href="http://net4.ccs.neu.edu/home/alexj/assignments/jquery/profile.html">Assignment 03 - jQuery</a></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"><a target="_blank" href="http://nodejs-johnsoncs4550.rhcloud.com/#/courses">Assignment 04 - Node.js &amp; Angular</a></li>
+	<div class="grid">
+	
+	<hr />
 
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
+		<figure class="effect-julia" ng-repeat="post in posts">
+			<img ng-src="{{ post.img }}">
+			<figcaption>
+				<h2> {{ post.nameSmall }} <span> {{ post.nameLarge }} </span></h2>
+				<div>
+					<p>{{ post.p1 }}</p>
+					<p>{{ post.p2 }}</p>
+					<p>{{ post.p3 }}</p>
+				</div>
 
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
+				<a href="{{ post.link }}">View more</a>
+			</figcaption>			
+		</figure>
 
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-		<li class="preview col-md-3 col-sm-6 col-xs-12"></li>
-
-		<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
-	</ul>
+	</div>
 
 </div>

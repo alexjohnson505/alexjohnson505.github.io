@@ -111,7 +111,7 @@ ul.filter li.active {
 	-webkit-box-shadow: 1px 1px 0px #333;
 	color: #fff;
 }
-
+/*
 #grid .preview {
 	height: 250px; 
 	background-color: orange;
@@ -127,7 +127,17 @@ ul.filter li.active {
   	display: block;
   	margin-top: 20px;
 }
-
+*/
 img.profile {
 	max-width: 100%;
+}
+
+.grid {
+	max-width: none;
+}
+
+.grid figure {
+	margin: 0;
+	width: 33%;
+	margin: .15%;
 }

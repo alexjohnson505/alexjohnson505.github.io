@@ -16,7 +16,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		p3 : "University. Boston, MA.",
 		link : "/#/",
   	},{
-		img : "http://placehold.it/480x360/2F343A",
+		img : "http://placehold.it/480x480/2F343A",
 		nameSmall : "Assignment",
 		nameLarge : "MEAN",
 		p1 : "Using Node.js and Angular",
@@ -24,7 +24,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		p3 : "for data management.",
 		link : "http://nodejs-johnsoncs4550.rhcloud.com/#/courses",
   	},{
-		img : "http://placehold.it/480x360/717D8C",
+		img : "http://placehold.it/480x480/717D8C",
 		nameSmall : "Assignment",
 		nameLarge : "jQuery",
 		p1 : "Data Management using everyone's",
@@ -32,7 +32,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		p3 : null,
 		link : "http://net4.ccs.neu.edu/home/alexj/assignments/jquery/profile.html",
   	},{
-		img : "http://placehold.it/480x360/DDDDDD",
+		img : "http://placehold.it/480x480/DDDDDD",
 		nameSmall : "Assignment",
 		nameLarge : "CSS",
 		p1 : "An example of CSS Frameworks",
@@ -40,7 +40,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		p3 : "for data management.",
 		link : "http://net4.ccs.neu.edu/home/alexj/assignments/css/profile.html",
   	},{
-		img : "http://placehold.it/480x360/BDB69C",
+		img : "http://placehold.it/480x480/BDB69C",
 		nameSmall : "Assignment",
 		nameLarge : "HTML",
 		p1 : "A basic example of HTML",
@@ -48,22 +48,46 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		p3 : null,
 		link : "http://net4.ccs.neu.edu/home/alexj/assignments/html/studyList.html",
   	},{
-		// img : "http://placehold.it/480x360/80CEB9",
-		// nameSmall : "Test",
-		// nameLarge : "Test2",
-		// p1 : "p1",
-		// p2 : "p2",
-		// p3 : "p3",
-		// link : "link",
-  // 	},{
-		// img : "http://placehold.it/480x360/41AAC4",
-		// nameSmall : "Test",
-		// nameLarge : "Test2",
-		// p1 : "p1",
-		// p2 : "p2",
-		// p3 : "p3",
-		// link : "link",
-  // 	},{
+		img : "http://placehold.it/480x480/2F343A",
+		nameSmall : "Tablelist",
+		nameLarge : ".com",
+		p1 : "",
+		p2 : "",
+		p3 : "",
+		link : "",
+  	},{
+		img : "http://placehold.it/480x480/717D8C",
+		nameSmall : "Tablelist",
+		nameLarge : "Admin",
+		p1 : null,
+		p2 : null,
+		p3 : null,
+		link : "",
+  	},{
+		img : "http://placehold.it/480x480/DDDDDD",
+		nameSmall : "Living",
+		nameLarge : "Cities",
+		p1 : null,
+		p2 : null,
+		p3 : null,
+		link : null,
+  	},{
+		img : "http://placehold.it/480x480/BDB69C",
+		nameSmall : "G-",
+		nameLarge : "Player",
+		p1 : null,
+		p2 : null,
+		p3 : null,
+		link : "",
+  	}, {
+		img : "http://placehold.it/480x480/2F343A",
+		nameSmall : "Swarm",
+		nameLarge : "Navigation",
+		p1 : null,
+		p2 : null,
+		p3 : null,
+		link : "",
+  	}, {
 		img : "images/thumbs/evertrue-amp.png",
 		link: "#post/evertrue-amp",
 		nameSmall : "EverTrue's",
@@ -158,13 +182,6 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		nameSmall : "Macro",
 		nameLarge : "Photography",
 	}];
-
-	// @TODO | Add:
-	// Tablelist.com
-	// Tablelist Admin
-	// Swarm Navigation
-	// Capstone
-	// Software Development
 
 			
   }]);

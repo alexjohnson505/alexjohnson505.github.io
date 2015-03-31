@@ -1,38 +1,29 @@
-<div class="container">
 
-	<div class="row" style="margin-top: 30px;">
+<!-- Filter Controls -->
+<!-- <div class="controls">
+	<ul class="filter">
+		<li class="filter active" data-filter="show_all">Show All</li>
+		<li class="filter" data-filter="web">Web Development</li>
+		<li class="filter" data-filter="programming">Programming</li>
+		<li class="filter" data-filter="photography">Photography</li>
+		<li class="filter" data-filter="design">Web Design</li>
+		<li class="filter" data-filter="graphic">Graphic Design</li>
+	</ul>
+</div>-->
 
-		<div class="col-sm-3">
-			<img src="images/alex.jpg" class="profile">
-		</div>
-		<div class="col-sm-9">
 
-			<h3>CS4550 Web Development - Alex Johnson</h3>
-			<p>This section of the site is in development. The goal is to build a re-usable Angular.js front-end for sorting and organizing posts such as content sections or portfolio items.</p>
 
-		</div>
+<div class="grid">
+	<div class="row" style="margin: 0px;">
+		<img src="images/alex.jpg" class="profile">
+
+		<h3>CS4550 Web Development - Alex Johnson</h3>
+		<p>This section of the site is in development. The goal is to build a re-usable Angular.js front-end for sorting and organizing posts such as content sections or portfolio items.</p>
 	</div>
 
-	<hr />
 
-	<!-- Filter Controls -->
-	<!-- <div class="controls">
-		<ul class="filter">
-			<li class="filter active" data-filter="show_all">Show All</li>
-			<li class="filter" data-filter="web">Web Development</li>
-			<li class="filter" data-filter="programming">Programming</li>
-			<li class="filter" data-filter="photography">Photography</li>
-			<li class="filter" data-filter="design">Web Design</li>
-			<li class="filter" data-filter="graphic">Graphic Design</li>
-		</ul>
-	</div>-->
-
-
-	<div class="grid">
-	
-	<hr />
-
-		<figure class="effect-julia" ng-repeat="post in posts">
+	<div ng-repeat="post in posts" class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+		<figure class="effect-julia">
 			<img ng-src="{{ post.img }}">
 			<figcaption>
 				<h2> {{ post.nameSmall }} <span> {{ post.nameLarge }} </span></h2>
@@ -45,7 +36,5 @@
 				<a href="{{ post.link }}">View more</a>
 			</figcaption>			
 		</figure>
-
 	</div>
-
 </div>

@@ -14,14 +14,6 @@
 
 
 <div class="grid">
-	<div class="row" style="margin: 0px;">
-		<img src="images/alex.jpg" class="profile">
-
-		<h3>CS4550 Web Development - Alex Johnson</h3>
-		<p>This section of the site is in development. The goal is to build a re-usable Angular.js front-end for sorting and organizing posts such as content sections or portfolio items.</p>
-	</div>
-
-
 	<div ng-repeat="post in posts" class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
 		<figure class="effect-julia">
 			<img ng-src="{{ post.img }}">

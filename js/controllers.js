@@ -8,6 +8,14 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
   function($scope, Phone) {
 
   	$scope.posts = [{
+		img : "images/alex.jpg",
+		nameSmall : "About",
+		nameLarge : "ME",
+		p1 : "Javascript Developer. Computer Science",
+		p2 : "and Interactive Media from Northeastern",
+		p3 : "University. Boston, MA.",
+		link : "/#/",
+  	},{
 		img : "http://placehold.it/480x360/2F343A",
 		nameSmall : "Assignment",
 		nameLarge : "MEAN",
@@ -40,22 +48,22 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		p3 : null,
 		link : "http://net4.ccs.neu.edu/home/alexj/assignments/html/studyList.html",
   	},{
-		img : "http://placehold.it/480x360/80CEB9",
-		nameSmall : "Test",
-		nameLarge : "Test2",
-		p1 : "p1",
-		p2 : "p2",
-		p3 : "p3",
-		link : "link",
-  	},{
-		img : "http://placehold.it/480x360/41AAC4",
-		nameSmall : "Test",
-		nameLarge : "Test2",
-		p1 : "p1",
-		p2 : "p2",
-		p3 : "p3",
-		link : "link",
-  	},{
+		// img : "http://placehold.it/480x360/80CEB9",
+		// nameSmall : "Test",
+		// nameLarge : "Test2",
+		// p1 : "p1",
+		// p2 : "p2",
+		// p3 : "p3",
+		// link : "link",
+  // 	},{
+		// img : "http://placehold.it/480x360/41AAC4",
+		// nameSmall : "Test",
+		// nameLarge : "Test2",
+		// p1 : "p1",
+		// p2 : "p2",
+		// p3 : "p3",
+		// link : "link",
+  // 	},{
 		img : "images/thumbs/evertrue-amp.png",
 		link: "#post/evertrue-amp",
 		nameSmall : "EverTrue's",
@@ -64,44 +72,45 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		img : "images/thumbs/texture-channel.png",
 		link: "#post/texture-channel",
 		nameSmall : "Texture",
-		nameLarge :  "Channel"
+		nameLarge :  "Channel",
 	},{
 		img : "images/thumbs/branding.png",
-		link: "#gallery/branding Branding",
-		nameSmall : "Design",
+		link: "#gallery/branding",
+		nameSmall : "Branding",
+		nameLarge : "Design",
 	},{
 		img : "images/thumbs/texturetechnologies.png",
-		link: "#post/texturetechnologies TextureTechnologies",
-		nameSmall : "com",
+		link: "#post/texturetechnologies",
+		nameSmall : "Texture",
+		nameLarge : "Technologies.com",
 	},{
 		img : "images/thumbs/clintvalentine.png" ,
-		link: "#post/clintvalentine ClintValentine",
-		nameSmall : "com",
+		link: "#post/clintvalentine ",
+		nameSmall : "Clint",
+		nameLarge : "Valentine.com"
 	},{
 
 		img : "images/thumbs/linkedin-grader.png",
 		link: "#post/linkedin-grader",
-		nameSmall : "EverTrue\'s",
-		nameLarge : "LinkedIn Grader"
+		nameSmall : "LinkedIn",
+		nameLarge : "Grader"
 	},{
 
 		img : "images/thumbs/texture-report.png" ,
 		link: "#post/texture-report",
-		nameSmall : "Texture Report.com",
+		nameSmall : "Texture",
+		nameLarge : "Report.com",
 	},{
-
 		img : "images/thumbs/fire.png" ,
-		link: "#gallery/fire Fire",
-		nameSmall : "Photography",
+		link: "#gallery/fire",
+		nameSmall : "Fire",
+		nameLarge : "Photography",
 	},{
-
 		img : "images/thumbs/fitbit-challenge.png",
 		link: "#post/fitbit-challenge",
-		nameSmall : "EverTrue\'s",
-		nameLarge : "FitBit Challenge",
-
+		nameSmall : "FitBit",
+		nameLarge : "Challenge",
 	},{
-
 		img : "images/thumbs/ttc-training-videos.png" ,
 		link: "#post/ttc-training",
 		nameSmall : "TA.XT2",
@@ -116,8 +125,8 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 
 		img : "images/thumbs/evertrue-email.png",
 		link: "#post/evertrue-email",
-		nameSmall : "EverTrue\'s",
-		nameLarge : "E-mail Campaigns",
+		nameSmall : "Email",
+		nameLarge : "Campaigns",
 	},{
 
 		img : "images/thumbs/eventler.png",
@@ -156,7 +165,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 	// Swarm Navigation
 	// Capstone
 	// Software Development
-	
+
 			
   }]);
 

@@ -90,42 +90,31 @@ hr {
 	border: 0 none;
 	border-top: 1px solid #eee;
 }
-/*
-ul.filter {
-	margin-bottom: 10px;
-}
-ul.filter li {
-	list-style-type: none;
-	display: inline-block;
-	padding: 2px 15px;
-	margin-left: 10px;
-	cursor: pointer;
-}
-ul.filter li.active {
-	background: #ba372f;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: 1px 1px 0px #333;
-	color: #fff;
-}*/
-/*
-#grid .preview {
-	height: 250px; 
-	background-color: orange;
-	border: 2px solid white;
-}
-#grid li {
-	list-style: none;
-}
-#grid .preview a {
-	color: #fff;
+
+nav.header {
 	width: 100%;
-	text-align: center;
-  	display: block;
-  	margin-top: 20px;
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	background-color: rgba(256, 256, 256, 0.95);
+	height: 40px;
+	border-bottom: 1px solid #eee;
+
+	-webkit-box-shadow: 0px 4px 6px -2px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 4px 6px -2px rgba(0,0,0,0.4);
+	box-shadow: 0px 4px 6px -2px rgba(0,0,0,0.4);
 }
-*/
+
+nav.header h1{
+	margin: 10px 0;
+	font-size: 18px;
+}
+
+nav.header a {
+	color : #000;
+	text-decoration: none;
+}
+
 img.profile {
 	max-width: 200px;
 	float: left;
@@ -135,6 +124,7 @@ img.profile {
 
 .grid {
 	max-width: none;
+	margin-top: 24px;
 }
 
 .grid .content-block {

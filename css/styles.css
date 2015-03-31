@@ -108,10 +108,11 @@ nav.header {
 nav.header a {
 	color : #000;
 	text-decoration: none;
+	margin: 5px 0;
 }
 
 nav.header h1 {
-	margin: 10px 0;
+	display: inline-block;
 	font-size: 18px;
 	font-weight: 200;
 	letter-spacing: 1px;
@@ -121,6 +122,15 @@ nav.header b {
 	font-weight: 600;
   	text-transform: uppercase;
   	letter-spacing: -1px;
+}
+
+nav.header .quick-links {
+	float: right;
+	margin: 5px 0;
+}
+
+nav.header .quick-links i.fa {
+	font-size: 28px;
 }
 
 img.profile {

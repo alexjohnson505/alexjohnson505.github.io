@@ -150,11 +150,13 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone',
 		nameLarge : "Photography",
 	}];
 
-		// @TODO | Add:
-		// Tablelist.com
-		// Tablelist Admin
-		// Swarm Navigation
-
+	// @TODO | Add:
+	// Tablelist.com
+	// Tablelist Admin
+	// Swarm Navigation
+	// Capstone
+	// Software Development
+	
 			
   }]);
 

@@ -12,16 +12,19 @@ var app = angular.module('app', [
 
 app.config(['$routeProvider',
   function($routeProvider) {
-    $routeProvider.
-      when('/', {
+    $routeProvider
+      
+      .when('/', {
         templateUrl: 'templates/home.tpl.html',
         controller: 'HomeCtrl'
-      }).
-      when('/posts/:postId', {
+      })
+
+      .when('/posts/:postId', {
         templateUrl: 'templates/post.tpl.html',
         controller: 'PostCtrl'
-      }).
-      otherwise({
+      })
+      
+      .otherwise({
         redirectTo: '/'
       });
   }]);

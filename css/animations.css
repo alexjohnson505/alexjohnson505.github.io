@@ -1,5 +1,10 @@
-/* http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/ */
+/* 
+ * Ideas for Subtle Hover Effects
+ * Thanks to ___ of tmpanus.net.
+ * http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+/* 
 
+/*
 @font-face {
 	font-weight: normal;
 	font-style: normal;
@@ -9,7 +14,7 @@
 		url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
 		url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
 		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
-}
+}*/
 
 .grid {
 	position: relative;

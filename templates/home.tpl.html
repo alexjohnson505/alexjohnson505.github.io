@@ -1,5 +1,10 @@
 <div class="grid">
-	<div ng-repeat="post in posts" class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+
+	<div ng-repeat="post in posts" 
+	     class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12" 
+	     ng-click="focus($index)"
+	     ng-class="{'focused' : focused === $index }">
+
 		<figure class="effect-julia">
 			<img ng-src="{{ post.img }}">
 			<figcaption>
@@ -10,7 +15,7 @@
 					<p>{{ post.p3 }}</p>
 				</div>
 
-				<a href="{{ post.link }}">View more</a>
+				<!-- <a href="{{ post.link }}">View more</a> -->
 			</figcaption>			
 		</figure>
 	</div>

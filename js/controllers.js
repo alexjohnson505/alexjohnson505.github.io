@@ -7,6 +7,12 @@ var appControllers = angular.module('appControllers', []);
 appControllers.controller('HomeCtrl', ['$scope', 'Phone',
   function($scope, Phone) {
 
+  	$scope.focused = -1;
+
+  	$scope.focus = function(index){
+  		$scope.focused = index;
+  	}
+
   	// List of available preview thumbnails
   	$scope.posts = [{
 		img : "images/alex.jpg",

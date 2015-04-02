@@ -177,6 +177,11 @@ img.profile {
 	height: 100%;
 }
 
+.grid .content-block.focused {
+	border: 1px solid red;
+	
+}
+
 /* Mobile */
 @media screen and (max-width: 767px) {
 	.grid .content-block figure {
@@ -187,3 +192,4 @@ img.profile {
 		display: none;
 	}
 }
+

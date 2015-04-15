@@ -69,7 +69,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		title : "Tablelist <span>.com</span>",
 		summary : ["Tablelist's homepage", "Instant access to nightclubs and lounges", "nightlife reservations from the browser"],
 		links : {
-			demo : "tablelist.com"
+			demo : "http://tablelist.com"
 		},
 		description : "As the web developer at Tablelist, I created an Angular web app for the home page. This project expanding into a reservation platform for customers.",
   	},{
@@ -82,7 +82,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		title : "Living <span>Cities</span>",
 		summary : [],
 		links : {
-			github : "github.com/data-visualization-capstone/web",
+			github : "http://github.com/data-visualization-capstone/web",
 		},
 		description : "A data visualization project for merging city data with social data and user activity. As the lead developer for my Interactive Media Capstone team, I created a data visualization platform, and an abstraction layer over the Leaflet.js API/",
   	},{
@@ -91,7 +91,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		title : "Living Cities <span>API</span>",
 		summary : [],
 		links : {
-			github : "github.com/data-visualization-capstone/api",
+			github : "http://github.com/data-visualization-capstone/api",
 		},
 		description : "As part of my senior year Capstone project, I led a team of artists and developers to create a spatial data visualization app. As part of the data collection phase, we build a set of social media data scrapers and a database for storing position data.",
   	},{
@@ -100,7 +100,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		summary : ["Spacial Temporal", "data visualization of player", "activity in video games."],
 		description : "Working with the Game Design department of Northeastern, I was the lead developer for a web app for visualizing and analyzing player activity in video games. This tool was used in a study of player behaviour in open world video games.",
 		links : {
-			demo : "g-player.herokuapp.com",
+			demo : "http://g-player.herokuapp.com",
 			online : "https://github.com/spacial-player-data-visualization/g-player-visualization",
 		},
   	}, {

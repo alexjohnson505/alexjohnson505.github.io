@@ -135,6 +135,11 @@ nav.header .quick-links {
 
 nav.header .quick-links i.fa {
 	font-size: 28px;
+	margin-left: 10px;
+}
+
+nav.header .quick-links i.fa:hover {
+	color: #3E5879;
 }
 
 img.profile {
@@ -177,10 +182,41 @@ img.profile {
 	height: 100%;
 }
 
-.grid .content-block.focused {
-	border: 1px solid red;
-	
+.grid .content-block figcaption .read-more {
+	bottom: 20px;
+  	position: absolute;
+  	padding: 10px 15px;
+
+	background-color: #333;
+	color: #fff;
+	border: 1px solid white;
 }
+
+.grid .content-block figcaption .read-more:hover {
+	background-color: #fff;
+	color: #2f3238;
+}
+
+.grid .content-block figcaption.details {
+	opacity: 0;
+
+}
+
+.grid .content-block.focused img,
+.grid .content-block.focused figcaption.preview {
+	opacity: 0;
+}
+
+.grid .content-block.focused figcaption.details {
+	opacity: 1;
+	padding: 25px;
+	font-size: 17px;
+	line-height: 25px;
+	text-transform: initial;
+	font-weight: 200;
+	letter-spacing: .5px;
+}
+
 
 /* Mobile */
 @media screen and (max-width: 767px) {

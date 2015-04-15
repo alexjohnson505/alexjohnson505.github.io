@@ -7,16 +7,17 @@
 
 		<figure class="effect-julia">
 			<img ng-src="{{ post.img }}">
-			<figcaption>
+			<figcaption class="preview">
 				<h2> {{ post.nameSmall }} <span> {{ post.nameLarge }} </span></h2>
 				<div>
 					<p>{{ post.p1 }}</p>
 					<p>{{ post.p2 }}</p>
 					<p>{{ post.p3 }}</p>
+					<p class="read-more">READ MORE</p>
 				</div>
 
-				<!-- <a href="{{ post.link }}">View more</a> -->
-			</figcaption>			
+			</figcaption>
+			<figcaption class="details" ng-bind-html="post.description"></figcaption>
 		</figure>
 	</div>
 </div>

@@ -17,8 +17,8 @@
 			</figcaption>
 			<figcaption class="details">
 				<div ng-bind-html="post.description" class="description"></div>
-				<a target="_blank" class="cta" href="{{posts.links.github}}" ng-show="post.links.github"><i class="fa fa-github"></i> View Code</a>
-				<a target="_blank" class="cta" href="{{posts.links.demo}}" ng-show="post.links.demo"><i class="fa fa-globe"></i> View Demo</a>
+				<a target="_blank" class="cta" ng-href="{{post.links.github}}" ng-show="post.links.github"><i class="fa fa-github"></i> View Code</a>
+				<a target="_blank" class="cta" ng-href="{{post.links.demo}}" ng-show="post.links.demo"><i class="fa fa-globe"></i> View Demo</a>
 
 			</figcaption>
 		</figure>

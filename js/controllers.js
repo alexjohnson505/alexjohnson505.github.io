@@ -28,7 +28,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 			demo : "alexjohnson.io",
 		}
   	},{
-		img : "http://placehold.it/480x480/2F343A",
+		img : "images/assignment04.png",
 		title : "Assignment <span>MEAN</span>",
 		summary : [
 			"Using Node.js and Angular", 
@@ -38,32 +38,39 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		description : "Assignment #04 for CS4550 Web Development.",
 		links : {
 			demo : "http://nodejs-johnsoncs4550.rhcloud.com/#/courses",
+			code : "https://github.com/alexjohnson505/node.js-authentication",
 		}
   	},{
-		img : "http://placehold.it/480x480/717D8C",
+		img : "images/assignment03.png",
 		title : "Assignment <span>jQuery</span>",
 		summary : ["using jQuery for data mangement"],
-		link : "http://net4.ccs.neu.edu/home/alexj/assignments/jquery/profile.html",
+		links : {
+			demo : "http://net4.ccs.neu.edu/home/alexj/assignments/jquery/profile.html",
+		},
 		description : "Assignment #03 for CS4550 Web Development.",
   	},{
-		img : "http://placehold.it/480x480/DDDDDD",
+		img : "images/assignment03.png",
 		title : "Assignment <span>CSS</span>",
 		summary : ["An example of CSS Frameworks.", "creating a Bootstrap template."],
-		link : "http://net4.ccs.neu.edu/home/alexj/assignments/css/profile.html",
+		links : {
+			demo : "http://net4.ccs.neu.edu/home/alexj/assignments/css/profile.html",
+		},
 		description : "Assignment #02 for CS4550 Web Development.",
   	},{
 		img : "http://placehold.it/480x480/BDB69C",
 		title : "Assignment <span>HTML</span>",
 		summary : ["A basic example of HTML", "Creating the DOM for a web page."],
-		link : "http://net4.ccs.neu.edu/home/alexj/assignments/html/studyList.html",
+		links : {
+			demo : "http://net4.ccs.neu.edu/home/alexj/assignments/html/studyList.html",
+		},
 		description : "Assignment #01 for CS4550 Web Development.",
   	},{
-		img : "http://placehold.it/480x480/2F343A",
+		img : "images/tablelist.png",
 		title : "Tablelist <span>.com</span>",
 		summary : ["Tablelist's homepage", "Instant access to nightclubs and lounges", "nightlife reservations from the browser"],
 		links : {
 			demo : "tablelist.com"
-		}
+		},
 		description : "As the web developer at Tablelist, I created an Angular web app for the home page. This project expanding into a reservation platform for customers.",
   	},{
 		img : "http://placehold.it/480x480/717D8C",
@@ -71,12 +78,12 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		summary : ["The Tablelist Admin Portal"],
 		description : "A set of tools for data management and analytics. This platform is used interally for marketing and sales. It maintains data analytics for the sales team and support tools for customer service.",
   	},{
-		img : "http://placehold.it/480x480/DDDDDD",
+		img : "images/livingcities.png",
 		title : "Living <span>Cities</span>",
 		summary : [],
 		links : {
 			github : "github.com/data-visualization-capstone/web",
-		}
+		},
 		description : "A data visualization project for merging city data with social data and user activity. As the lead developer for my Interactive Media Capstone team, I created a data visualization platform, and an abstraction layer over the Leaflet.js API/",
   	},{
   	},{
@@ -85,26 +92,26 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		summary : [],
 		links : {
 			github : "github.com/data-visualization-capstone/api",
-		}
+		},
 		description : "As part of my senior year Capstone project, I led a team of artists and developers to create a spatial data visualization app. As part of the data collection phase, we build a set of social media data scrapers and a database for storing position data.",
   	},{
-		img : "http://placehold.it/480x480/BDB69C",
+		img : "images/g-player.jpg",
 		title : "G- <span>Player</span>",
 		summary : ["Spacial Temporal", "data visualization of player", "activity in video games."],
-		description : "Working with the Game Design department of Northeastern, I was the lead developer for a web app for visualizing and analyzing player activity in video games. This tool was used in a study of player behaviour in open world video games."
+		description : "Working with the Game Design department of Northeastern, I was the lead developer for a web app for visualizing and analyzing player activity in video games. This tool was used in a study of player behaviour in open world video games.",
 		links : {
 			demo : "g-player.herokuapp.com",
 			online : "https://github.com/spacial-player-data-visualization/g-player-visualization",
-		}
+		},
   	}, {
-		img : "http://placehold.it/480x480/2F343A",
+		img : "images/swarm.png",
 		title : "Swarm <span>Navigation</span>",
 		summary : ["Interactive Visualization", "of Swarm Behaviour using Craig", "Reynold's research in swarm algorithms."],
 		links : {
 			code : "https://github.com/alexjohnson505/swarm-navigation",
 			demo : "http://alexjohnson.io/swarm-navigation",
 			// @TODO Fix
-		}
+		},
   	}, {
 		img : "images/thumbs/evertrue-amp.png",
 		link: "#post/evertrue-amp",
@@ -121,33 +128,33 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		img : "images/thumbs/branding.png",
 		link: "#gallery/branding",
 		title : "Branding <span>Design</span>",
-		summary : ["Branding and", "marketing experience"]
+		summary : ["Branding and", "marketing experience"],
 		description : "A quick overview of some branding and graphic design work I've created.",
 	},{
 		img : "images/thumbs/texturetechnologies.png",
 		link: "#post/texturetechnologies",
 		title : "Texture <span>Technologies.com</span>",
-		summary : ["Texture Technologies' Home Page", "Scientific Instrument and", "Texture Measurement support resources" ]
+		summary : ["Texture Technologies' Home Page", "Scientific Instrument and", "Texture Measurement support resources" ],
 		description : "TextureTechnologies.com is the primary resource for Texture Technologies' texture measurement hardware and software. Containing application studies, and hardware specifications.",
 	},{
 		img : "images/thumbs/clintvalentine.png" ,
 		link: "#post/clintvalentine ",
 		title : "Clint <span>Valentine.com</span>",
-		summary : ["Adventurer and Photography", "Personal site and blog."]
+		summary : ["Adventurer and Photography", "Personal site and blog."],
 		description : "ClintValentine.com is a personal site for Clint - an experienced rock climber, and cross country biker. Clint documents his travels along with photographing the environment.",
 	},{
 
 		img : "images/thumbs/linkedin-grader.png",
 		link: "#post/linkedin-grader",
 		title : "LinkedIn <span>Grader</span>",
-		summary : ["An analytics tool", "for ranking LinkedIn groups", "in comparison to competitors."]
+		summary : ["An analytics tool", "for ranking LinkedIn groups", "in comparison to competitors."],
 		description : "LinkedIn Grader is an analytics tool for customers, allowing clients to analyze their LinkedIn presense and engagement in relation to similar organizations.",
 	},{
 
 		img : "images/thumbs/texture-report.png" ,
 		link: "#post/texture-report",
 		title : "Texture <span>Report.com</span>",
-		summary : ["Texture research blog"]
+		summary : ["Texture research blog"],
 		description : "Texture Technologies' blog is a one-stop source for news in the world of texture analysis",
 	},{
 		img : "images/thumbs/fire.png" ,

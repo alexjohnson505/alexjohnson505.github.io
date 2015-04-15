@@ -10,9 +10,7 @@
 			<figcaption class="preview">
 				<h2 ng-bind-html="post.title"></h2>
 				<div>
-					<p>{{ post.p1 }}</p>
-					<p>{{ post.p2 }}</p>
-					<p>{{ post.p3 }}</p>
+					<p ng-repeat="line in post.summary">{{ line }}</p>
 					<p class="cta read-more">READ MORE</p>
 				</div>
 

@@ -28,6 +28,19 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		// 	demo : "alexjohnson.io",
 		// }
   	},{
+		img : "images/nytbooks.png",
+		title : "Book <span>FINDER</span>",
+		summary : [
+			"Using the NYT Top Sellers", 
+			"API for book recommendations", 
+			"and reviews."
+		],
+		description : "As the final project for CS4550 Web Development, we build a MEAN stack web app for searching and saving recommendations from the New York Times top sellers API.",
+		links : {
+			demo : "http://nyt-books.herokuapp.com/",
+			github : "https://github.com/tomxhu/NYT-Books",
+		}
+  	},{
 		img : "images/assignment04.png",
 		title : "Assignment <span>MEAN</span>",
 		summary : [

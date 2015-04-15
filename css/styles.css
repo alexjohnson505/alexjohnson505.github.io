@@ -150,7 +150,7 @@ img.profile {
 }
 
 .grid {
-	max-width: none;
+	max-width: 1600px;
 	margin-top: 24px;
 }
 
@@ -185,11 +185,6 @@ img.profile {
 .grid .content-block figcaption .read-more {
 	bottom: 20px;
   	position: absolute;
-  	padding: 10px 15px;
-
-	background-color: #333;
-	color: #fff;
-	border: 1px solid white;
 }
 
 .grid .content-block figcaption .read-more:hover {
@@ -217,6 +212,33 @@ img.profile {
 	letter-spacing: .5px;
 }
 
+.grid .content-block figcaption.details .description {
+	margin-bottom: 15px;
+}
+
+.grid .content-block figcaption.details a {
+	text-decoration: none;
+	position: relative;
+	font-size: inherit;
+	opacity: 1;
+}
+
+.grid .content-block figcaption .cta {
+  	padding: 10px 15px;
+	background-color: #333;
+	color: #fff;
+	border: 1px solid white;
+}
+
+.grid .content-block figcaption .cta:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.grid .content-block figcaption .cta .fa {
+	display: inline;
+	margin-right: 10px;
+}
 
 /* Mobile */
 @media screen and (max-width: 767px) {

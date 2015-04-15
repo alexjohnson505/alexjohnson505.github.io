@@ -16,211 +16,164 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
   	// List of available preview thumbnails
   	$scope.posts = [{
 		img : "images/alex.jpg",
-		nameSmall : "About",
-		nameLarge : "ME",
-		p1 : "Javascript Developer. Computer Science",
-		p2 : "and Interactive Media from Northeastern",
-		p3 : "University. Boston, MA.",
-		link : "/#/",
+		title : "About <span>ME</span>",
+		summary : ["Javascript Developer. Computer Science", "and Interactive Media from Northeastern", "University. Boston, MA."],
 		description : "<b>Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. </b>Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
+		links : {
+			github : "https://github.com/alexjohnson505",
+			demo : "alexjohnson.io",
+		}
   	},{
 		img : "http://placehold.it/480x480/2F343A",
-		nameSmall : "Assignment",
-		nameLarge : "MEAN",
-		p1 : "Using Node.js and Angular",
-		p2 : "to create a CRUD single page app",
-		p3 : "for data management.",
+		title : "Assignment <span>MEAN</span>",
+		summary : ["Using Node.js and Angular", "to create a CRUD single page app", "for data management."],
 		link : "http://nodejs-johnsoncs4550.rhcloud.com/#/courses",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
   	},{
 		img : "http://placehold.it/480x480/717D8C",
-		nameSmall : "Assignment",
-		nameLarge : "jQuery",
-		p1 : "Data Management using everyone's",
-		p2 : "favorite DOM manipulation library",
-		p3 : null,
+		title : "Assignment <span>jQuery</span>",
+		summary : ["Data Management using everyone's", "favorite DOM manipulation library", ""],
 		link : "http://net4.ccs.neu.edu/home/alexj/assignments/jquery/profile.html",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
   	},{
 		img : "http://placehold.it/480x480/DDDDDD",
-		nameSmall : "Assignment",
-		nameLarge : "CSS",
-		p1 : "An example of CSS Frameworks",
-		p2 : "using Boostrap for templating",
-		p3 : "for data management.",
+		title : "Assignment <span>CSS</span>",
+		summary : ["An example of CSS Frameworks", "using Boostrap for templating", "for data management."],
 		link : "http://net4.ccs.neu.edu/home/alexj/assignments/css/profile.html",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
   	},{
 		img : "http://placehold.it/480x480/BDB69C",
-		nameSmall : "Assignment",
-		nameLarge : "HTML",
-		p1 : "A basic example of HTML",
-		p2 : "Creating the DOM for a web page.",
-		p3 : null,
+		title : "Assignment <span>HTML</span>",
+		summary : ["A basic example of HTML", "Creating the DOM for a web page.", ""],
 		link : "http://net4.ccs.neu.edu/home/alexj/assignments/html/studyList.html",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
   	},{
 		img : "http://placehold.it/480x480/2F343A",
-		nameSmall : "Tablelist",
-		nameLarge : ".com",
-		p1 : "",
-		p2 : "",
-		p3 : "",
+		title : "Tablelist <span>.com</span>",
+		summary : ["", "", ""],
 		link : "",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
   	},{
 		img : "http://placehold.it/480x480/717D8C",
-		nameSmall : "Tablelist",
-		nameLarge : "Admin",
-		p1 : null,
-		p2 : null,
-		p3 : null,
+		title : "Tablelist <span>Admin</span>",
+		summary : [null, null, null],
 		link : "",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
   	},{
 		img : "http://placehold.it/480x480/DDDDDD",
-		nameSmall : "Living",
-		nameLarge : "Cities",
-		p1 : null,
-		p2 : null,
-		p3 : null,
+		title : "Living <span>Cities</span>",
+		summary : [null, null, null],
 		link : null,
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
   	},{
 		img : "http://placehold.it/480x480/BDB69C",
-		nameSmall : "G-",
-		nameLarge : "Player",
-		p1 : null,
-		p2 : null,
-		p3 : null,
+		title : "G- <span>Player</span>",
+		summary : [null, null, null],
 		link : "",
   	}, {
 		img : "http://placehold.it/480x480/2F343A",
-		nameSmall : "Swarm",
-		nameLarge : "Navigation",
-		p1 : null,
-		p2 : null,
-		p3 : null,
+		title : "Swarm <span>Navigation</span>",
+		summary : [null, null, null],
 		link : "",
   	}, {
 		img : "images/thumbs/evertrue-amp.png",
 		link: "#post/evertrue-amp",
-		nameSmall : "EverTrue's",
-		nameLarge : "Portal",
+		title : "EverTrue's <span>Portal</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 		img : "images/thumbs/texture-channel.png",
 		link: "#post/texture-channel",
-		nameSmall : "Texture",
-		nameLarge :  "Channel",
+		title : "Texture <span>Channel</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 		img : "images/thumbs/branding.png",
 		link: "#gallery/branding",
-		nameSmall : "Branding",
-		nameLarge : "Design",
+		title : "Branding <span>Design</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 		img : "images/thumbs/texturetechnologies.png",
 		link: "#post/texturetechnologies",
-		nameSmall : "Texture",
-		nameLarge : "Technologies.com",
+		title : "Texture <span>Technologies.com</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 		img : "images/thumbs/clintvalentine.png" ,
 		link: "#post/clintvalentine ",
-		nameSmall : "Clint",
-		nameLarge : "Valentine.com",
+		title : "Clint <span>Valentine.com</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 
 		img : "images/thumbs/linkedin-grader.png",
 		link: "#post/linkedin-grader",
-		nameSmall : "LinkedIn",
-		nameLarge : "Grader",
+		title : "LinkedIn <span>Grader</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 
 		img : "images/thumbs/texture-report.png" ,
 		link: "#post/texture-report",
-		nameSmall : "Texture",
-		nameLarge : "Report.com",
+		title : "Texture <span>Report.com</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 		img : "images/thumbs/fire.png" ,
 		link: "#gallery/fire",
-		nameSmall : "Fire",
-		nameLarge : "Photography",
+		title : "Fire <span>Photography</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 		img : "images/thumbs/fitbit-challenge.png",
 		link: "#post/fitbit-challenge",
-		nameSmall : "FitBit",
-		nameLarge : "Challenge",
+		title : "FitBit <span>Challenge</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 		img : "images/thumbs/ttc-training-videos.png" ,
 		link: "#post/ttc-training",
-		nameSmall : "TA.XT2",
-		nameLarge : "Training Videos",
+		title : "TA.XT2 <span>Training Videos</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 
 		img : "images/thumbs/quadcopter.png" ,
 		link: "#post/quadcopter",
-		nameSmall : "Project",
-		nameLarge : "quadcopter",
+		title : "Project <span>quadcopter</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 
 		img : "images/thumbs/evertrue-email.png",
 		link: "#post/evertrue-email",
-		nameSmall : "Email",
-		nameLarge : "Campaigns",
+		title : "Email <span>Campaigns</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 
 		img : "images/thumbs/eventler.png",
 		link: "#post/eventler",
-		nameSmall : "EverTrue\'s",
-		nameLarge : "Eventler",
+		title : "EverTrue\'s <span>Eventler</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 
 		img : "images/thumbs/firebrand-innovations.png",
 		link: "#post/firebrand-innovations",
-		nameSmall : "Firebrand",
-		nameLarge : "Innovations.com",
+		title : "Firebrand <span>Innovations.com</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 
 		img : "images/thumbs/salem-state.png",
 		link: "#post/salem-state",
-		nameSmall : "Salem State",
-		nameLarge : "Design",
-		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
-		
-		// demo
-		// site
-		// github
+		title : "Salem State <span>Design</span>",
+		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",	
 
 	},{
 
 		img : "images/thumbs/tetris.png",
 		link: "#post/tetris",
-		nameSmall : "Tetris",
-		nameLarge : "in Scheme",
+		title : "Tetris <span>in Scheme</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	},{
 
 		img : "images/thumbs/macro.png",
 		link: "#gallery/macro",
-		nameSmall : "Macro",
-		nameLarge : "Photography",
+		title : "Macro <span>Photography</span>",
 		description : "Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
 	}];
 
 	angular.forEach($scope.posts, function(post){
+		post.title = $sce.trustAsHtml(post.title);
 		post.description = $sce.trustAsHtml(post.description);
 	})
 

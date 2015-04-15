@@ -18,7 +18,7 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		img : "images/alex.jpg",
 		title : "About <span>ME</span>",
 		summary : ["Javascript Developer. Computer Science", "and Interactive Media from Northeastern", "University. Boston, MA."],
-		description : "<b>Lorem ipsum dolor sit amet, mauris lorem ut accumsan sed aliquam. </b>Massa ac est mauris, morbi suscipit vestibulum sit magna lobortis enim. Blandit elementum accumsan adipiscing ipsum venenatis rutrum. Nunc at orci velit iure, recusandae vitae commodo commodo, eget urna ullamcorper dignissim a et, varius integer lobortis blandit sagittis. Eleifend per velit accumsan tincidunt",
+		description : "<b>I'm Alex</b>. Graduated from Northeastern University in 2015 with a degree in Computer Science and interactive media. <b>Javascript Developer</b> by trade, with additional work in Marketing, User Experience, and Branding. Currently working at Tablelist. When not at a computer, you'll me biking around Boston.<br>",
 		links : {
 			github : "https://github.com/alexjohnson505",
 			demo : "alexjohnson.io",

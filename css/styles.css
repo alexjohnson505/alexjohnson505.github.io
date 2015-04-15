@@ -205,11 +205,11 @@ img.profile {
 .grid .content-block.focused figcaption.details {
 	opacity: 1;
 	padding: 25px;
-	font-size: 17px;
+	font-size: 19px;
 	line-height: 25px;
 	text-transform: initial;
 	font-weight: 200;
-	letter-spacing: .5px;
+	letter-spacing: .6px;
 }
 
 .grid .content-block figcaption.details .description {

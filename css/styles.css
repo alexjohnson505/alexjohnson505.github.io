@@ -183,8 +183,11 @@ img.profile {
 }
 
 .grid .content-block figcaption .read-more {
-	bottom: 20px;
-  	position: absolute;
+    bottom: 30px;
+    right: 30px;
+    position: absolute;
+    padding: 12px 20px;
+    border: 1px solid #fff;
 }
 
 .grid .content-block figcaption .read-more:hover {

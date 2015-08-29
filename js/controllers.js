@@ -15,72 +15,18 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 
   	// List of available preview thumbnails
   	$scope.posts = [{
-		img : "images/alex.jpg",
-		title : "About <span>ME</span>",
-		summary : [
-			"Javascript Developer. Computer", 
-			"Science and Interactive Media", 
-			"Major at Northeastern"
-		],
-		description : "<b>I'm Alex</b>. Graduated from Northeastern University in 2015 with a degree in Computer Science and Interactive Media. <b>Javascript Developer</b> by trade with experience in Marketing and UX. Currently working at Tablelist.",
-		// links : {
-		// 	github : "https://github.com/alexjohnson505",
-		// 	demo : "alexjohnson.io",
-		// }
-  	},{
-		img : "images/nytbooks.png",
-		title : "Book <span>FINDER</span>",
-		summary : [
-			"Using the NYT Top Sellers", 
-			"API for book recommendations", 
-			"and reviews."
-		],
-		description : "As the final project for CS4550 Web Development, we build a MEAN stack web app for searching and saving recommendations from the New York Times top sellers API.",
-		links : {
-			demo : "http://nyt-books.herokuapp.com/",
-			github : "https://github.com/tomxhu/NYT-Books",
-		}
-  	},{
-		img : "images/assignment04.png",
-		title : "Assignment <span>MEAN</span>",
-		summary : [
-			"Using Node.js and Angular", 
-			"to create a boilerplate single", 
-			"page app for data management."
-		],
-		description : "Assignment #04 for CS4550 Web Development.",
-		links : {
-			demo : "http://nodejs-johnsoncs4550.rhcloud.com/#/courses",
-			github : "https://github.com/alexjohnson505/node.js-authentication",
-		}
-  	},{
-		img : "images/assignment03.png",
-		title : "Assignment <span>jQuery</span>",
-		summary : ["using jQuery for data mangement"],
-		links : {
-			demo : "http://net4.ccs.neu.edu/home/alexj/assignments/jquery/profile.html",
-		},
-		description : "Assignment #03 for CS4550 Web Development.",
-  	},{
-		img : "images/assignment03.png",
-		title : "Assignment <span>CSS</span>",
-		summary : ["An example of CSS Frameworks.", "creating a Bootstrap template."],
-		links : {
-			demo : "http://net4.ccs.neu.edu/home/alexj/assignments/css/profile.html",
-		},
-		description : "Assignment #02 for CS4550 Web Development.",
-  	},{
-		img : "images/blue.png",
-		title : "Assignment <span>HTML</span>",
-		summary : ["A basic example of HTML", "Creating the DOM for a web page."],
-		links : {
-			demo : "http://net4.ccs.neu.edu/home/alexj/assignments/html/studyList.html",
-		},
-		description : "Assignment #01 for CS4550 Web Development.",
-  	},{
+  		//{
+		// img : "images/alex.jpg",
+		// title : "About <span>ME</span>",
+		// 	"Javascript Developer. Computer", 
+		// 	"Science and Interactive Media", 
+		// 	"Major at Northeastern"
+		// ],
+		// description : "<b>I'm Alex</b>. Graduated from Northeastern University in 2015 with a degree in Computer Science and Interactive Media. <b>Javascript Developer</b> by trade with experience in Marketing and UX. Currently working at Tablelist.",
+  		// },
+  
 		img : "images/tablelist.png",
 		title : "Tablelist <span>.com</span>",
-		summary : ["Tablelist's homepage. Instant", "access to nightclubs and lounges", "nightlife reservation software"],
 		links : {
 			demo : "http://tablelist.com"
 		},
@@ -88,22 +34,18 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
   	},{
 		img : "images/blue.png",
 		title : "Tablelist <span>Admin</span>",
-		summary : ["The Tablelist Admin Portal"],
 		description : "A set of tools for data management and analytics. This platform is used interally for marketing and sales. It maintains data analytics for the sales team and support tools for customer service.",
   	},{
 		img : "images/livingcities.png",
 		title : "Living <span>Cities</span>",
-		summary : [],
 		links : {
 			github : "http://github.com/data-visualization-capstone/web",
 			demo : "http://vent8225.dyndns.org/map.html",
 		},
 		description : "A data visualization project for merging city data with social data and user activity. As the lead developer for my Interactive Media Capstone team, I created a data visualization platform, and an abstraction layer over the Leaflet.js API",
   	},{
-  	},{
 		img : "images/livingcitiesapi.png",
 		title : "Living Cities <span>API</span>",
-		summary : [],
 		links : {
 			github : "http://github.com/data-visualization-capstone/api",
 		},
@@ -111,7 +53,6 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
   	},{
 		img : "images/g-player.jpg",
 		title : "G- <span>Player</span>",
-		summary : ["Spacial Temporal", "data visualization of player", "activity in video games."],
 		description : "Working with the Game Design department of Northeastern, I was the lead developer for a web app for visualizing and analyzing player activity in video games. This tool was used in a study of player behaviour in open world video games.",
 		links : {
 			demo : "http://g-player.herokuapp.com",
@@ -120,7 +61,6 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
   	}, {
 		img : "images/swarm.png",
 		title : "Swarm <span>Navigation</span>",
-		summary : ["Interactive Visualization", "of Swarm Behaviour using Craig", "Reynold's research in swarm algorithms."],
 		links : {
 			github : "https://github.com/alexjohnson505/swarm-navigation",
 			demo : "http://alexjohnson.io/swarm-navigation",
@@ -129,25 +69,21 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		img : "images/thumbs/evertrue-amp.png",
 		link: "#post/evertrue-amp",
 		title : "EverTrue's <span>Portal</span>",
-		summary : ["Client facing data management", "administrative portal"],
 		description : "While working at EverTrue, I focused on their client facing admin portal, a set of power tools for managing and configuring the client's white-labeled networking app.",
 	},{
 		img : "images/thumbs/texture-channel.png",
 		link: "#post/texture-channel",
 		title : "Texture <span>Channel</span>",
-		summary : ["Subscription based", "video training resource", "for customers."],
 		description : "TextureChannel.com is a Subscription service offered by Texture Technologies as a solution to remote video training. Users are issued an account, where they can view training videos for the TA.XT2 Plus and Texture Measurement Software.",
 	},{
 	// 	img : "images/thumbs/branding.png",
 	// 	link: "#gallery/branding",
 	// 	title : "Branding <span>Design</span>",
-	// 	summary : ["Branding and", "marketing experience"],
 	// 	description : "A quick overview of some branding and graphic design work I've created.",
 	// },{
 		img : "images/thumbs/texturetechnologies.png",
 		link: "#post/texturetechnologies",
 		title : "Texture <span>Technologies.com</span>",
-		summary : ["Texture Technologies' Home Page", "Scientific Instrument and", "Texture Measurement support resources" ],
 		description : "TextureTechnologies.com is the primary resource for Texture Technologies' texture measurement hardware and software. Containing application studies, and hardware specifications.",
 		links : {
 			demo : "http://texturetechnologies.com/",
@@ -156,7 +92,6 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		img : "images/thumbs/clintvalentine.png" ,
 		link: "#post/clintvalentine ",
 		title : "Clint <span>Valentine.com</span>",
-		summary : ["Adventurer and Photography", "Personal site and blog."],
 		description : "ClintValentine.com is a personal site for Clint - an experienced rock climber, and cross country biker. Clint documents his travels along with photographing the environment.",
 		links : {
 			demo : "http://www.clintvalentine.com/",
@@ -166,14 +101,12 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		img : "images/thumbs/linkedin-grader.png",
 		link: "#post/linkedin-grader",
 		title : "LinkedIn <span>Grader</span>",
-		summary : ["An analytics tool", "for ranking LinkedIn groups", "in comparison to competitors."],
 		description : "LinkedIn Grader is an analytics tool for customers, allowing clients to analyze their LinkedIn presense and engagement in relation to similar organizations.",
 	},{
 
 		img : "images/thumbs/texture-report.png" ,
 		link: "#post/texture-report",
 		title : "Texture <span>Report.com</span>",
-		summary : ["Texture research blog"],
 		description : "Texture Technologies' blog is a one-stop source for news in the world of texture analysis",
 	},{
 	// 	img : "images/thumbs/fire.png" ,
@@ -195,7 +128,6 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		img : "images/thumbs/quadcopter.png" ,
 		link: "#post/quadcopter",
 		title : "Project <span>quadcopter</span>",
-		summary : ["An introduction into", "Arduino and C++"],
 		description : "As summer challenge, I worked with Nate Lilienthal to build a remote controllable Arduino-powered Quadcopter from scratch.",
 	},{
 
@@ -214,7 +146,6 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 		img : "images/thumbs/firebrand-innovations.png",
 		link: "#post/firebrand-innovations",
 		title : "Firebrand <span>Innovations.com</span>",
-		summary : ["Poster website for a", "video conferencing tech", "startup"],
 		description : "",
 		links : {
 			demo : "http://firebrandinnovations.com/",

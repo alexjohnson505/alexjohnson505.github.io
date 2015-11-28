@@ -181,9 +181,16 @@ appControllers.controller('HomeCtrl', ['$scope', 'Phone', '$sce',
 			
   }]);
 
-appControllers.controller('PostCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
+appControllers.controller('PostCtrl', ['$scope', '$routeParams', 'content',
+  function($scope, $routeParams, content) {
 
+  	// Post ID from URL
+  	var postId = $routeParams.postId;
 
+  	// Mock API call.
+  	$scope.post = content.get(postId);
+  		
+  	// Debug
+  	console.log($scope.post);
     
   }]);

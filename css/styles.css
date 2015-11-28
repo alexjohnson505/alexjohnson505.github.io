@@ -178,24 +178,6 @@ img.profile {
 	height: 100%;
 }
 
-.grid .content-block figcaption a.read-more {
-    bottom: 30px;
-    right: 30px;
-    position: absolute;
-    padding: 12px 20px;
-    border: 1px solid #fff;
-}
-
-.grid .content-block figcaption .read-more:hover {
-	background-color: #fff;
-	color: #2f3238;
-}
-
-.grid .content-block figcaption.details {
-	opacity: 0;
-
-}
-
 .grid .content-block.focused img,
 .grid .content-block.focused figcaption.preview {
 	opacity: 0;
@@ -211,17 +193,39 @@ img.profile {
 	letter-spacing: .6px;
 }
 
+.grid .content-block figcaption a.read-more {
+    bottom: 30px;
+    right: 30px;
+    left: 30px;
+    position: absolute;
+    padding: 12px 20px;
+    border: 1px solid #fff;
+	opacity: 1;
+    font-size: 20px;
+    text-indent: inherit;
+    display: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.grid .content-block.focused figcaption a.read-more {
+	display: block;
+}
+
+.grid .content-block figcaption .read-more:hover {
+	background-color: #fff;
+	color: #2f3238;
+}
+
+.grid .content-block figcaption.details {
+	opacity: 0;
+
+}
+
 .grid .content-block figcaption.details .description {
 	font-family: 'Roboto', sans-serif;
 	margin-bottom: 15px;
-}
-
-.grid .content-block figcaption.details a {
-	text-decoration: none;
-	position: relative;
-	font-size: inherit;
-	opacity: 1;
-	font-weight: 400;
 }
 
 .grid .content-block figcaption .cta {

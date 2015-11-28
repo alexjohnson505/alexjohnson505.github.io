@@ -1,8 +1,8 @@
 appServices.factory('content', ['$window', function(win) {
    
-	function postTemplate (name){
-		return '<hr/><h2>{{title}}</h2><hr /><img src="images/preview/' + name + '.jpg"><p><i>{{{summary}}}</i></p><p>{{{description}}}</p><p>Tags: {{tags}}</p><p><a href="javascript:$.fancybox.close();">Close</a></p>';
-	}
+	// function postTemplate (name){
+	// 	return '<hr/><h2>{{title}}</h2><hr /><img src="images/preview/' + name + '.jpg"><p><i>{{{summary}}}</i></p><p>{{{description}}}</p><p>Tags: {{tags}}</p><p><a href="javascript:$.fancybox.close();">Close</a></p>';
+	// }
 
 	var content = {
 		"evertrue-amp" : {
@@ -165,8 +165,14 @@ appServices.factory('content', ['$window', function(win) {
 		return content[postId];
 	}
 
+	function list(){
+		return content;
+
+	}
+
     return {
    	  get : get,
+   	  list : list,
     };
    
  }]);

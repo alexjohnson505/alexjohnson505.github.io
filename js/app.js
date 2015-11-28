@@ -7,11 +7,14 @@ var app = angular.module('app', [
   'appControllers',
   'appFilters',
   'appServices',
+  function(){
+    console.log('App Initialized.');
+  }
 ]);
 
 // Routes
-app.config(['$routeProvider',
-  function($routeProvider) {
+app.config(['$routeProvider', '$locationProvider',
+  function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'templates/home.tpl.html',
@@ -21,11 +24,23 @@ app.config(['$routeProvider',
         templateUrl: 'templates/post.tpl.html',
         controller: 'PostCtrl'
       })
+      .when('/404', {
+        templateUrl: 'templates/404.tpl.html',
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/404'
       });
+
   }]);
+
 
 // Namespace
 var appServices = angular.module('appServices', ['ngResource']);
 var appControllers = angular.module('appControllers', []);
+
+// Filters
+angular.module('appFilters', []).filter('checkmark', function() {
+  return function(input) {
+    return input ? '\u2713' : '\u2718';
+  };
+});

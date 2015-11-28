@@ -3,7 +3,6 @@
 // App.js
 var app = angular.module('app', [
   'ngRoute',
-  'appAnimations',
   'appControllers',
   'appFilters',
   'appServices',
@@ -31,16 +30,22 @@ app.config(['$routeProvider', '$locationProvider',
         redirectTo: '/404'
       });
 
+    // use the HTML5 History API
+    // https://scotch.io/quick-tips/pretty-urls-in-angularjs-removing-the-hashtag
+    $locationProvider.html5Mode(true);
+
   }]);
 
 
 // Namespace
 var appServices = angular.module('appServices', ['ngResource']);
 var appControllers = angular.module('appControllers', []);
+var appFilters = angular.module('appFilters', []);
 
-// Filters
-angular.module('appFilters', []).filter('checkmark', function() {
-  return function(input) {
-    return input ? '\u2713' : '\u2718';
-  };
-});
+// Trust HTML String
+// http://stackoverflow.com/questions/20520866/can-we-use-sce-trustashtmlstring-out-of-filters
+appFilters.filter('to_trusted', ['$sce', function($sce){
+    return function(text) {
+        return $sce.trustAsHtml(text);
+    };
+}]);

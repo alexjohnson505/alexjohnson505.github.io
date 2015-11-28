@@ -8,7 +8,7 @@
 		<figure class="effect-julia">
 			<img ng-src="{{ post.img }}">
 			<figcaption class="preview">
-				<h2 ng-bind-html="post.title"></h2>
+				<h2 data-ng-bind-html="post.title | to_trusted"></h2>
 				<div>
 					<!-- <p ng-repeat="line in post.summary">{{ line }}</p> -->
 					<!-- <p class="cta read-more">READ MORE</p> -->
@@ -16,7 +16,7 @@
 
 			</figcaption>
 			<figcaption class="details">
-				<div ng-bind-html="post.description" class="description"></div>
+				<div data-ng-bind-html="post.description | to_trusted" class="description"></div>
 				<a class="read-more" href="/#/posts/{{post.slug}}">Read More</div>
 
 				<!-- <div class="cta" ng-show="post.links.github">

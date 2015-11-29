@@ -1,5 +1,5 @@
-appControllers.controller('PostCtrl', ['$scope', '$routeParams', 'content',
-  function($scope, $routeParams, content) {
+appControllers.controller('PostCtrl', ['$scope', '$routeParams', 'pages',
+  function($scope, $routeParams, pages) {
 
 	console.log("postCtrl.js Initialized.");
 
@@ -7,9 +7,8 @@ appControllers.controller('PostCtrl', ['$scope', '$routeParams', 'content',
   	var postId = $routeParams.postId;
 
   	// Mock API call.
-  	$scope.post = content.get(postId);
-  		
-  	// Debug
-  	console.log($scope.post);
-    
+  	$scope.post = pages.get(postId);
+
+    // 
+    $scope.posts = pages.list();
   }]);

@@ -1,6 +1,6 @@
 
-appControllers.controller('HomeCtrl', ['$scope', '$sce', 'content',
-  function($scope, $sce, content) {
+appControllers.controller('HomeCtrl', ['$scope', '$sce', 'pages',
+  function($scope, $sce, pages) {
 
     console.log("homeCtrl.js Initialized.");
 
@@ -11,10 +11,10 @@ appControllers.controller('HomeCtrl', ['$scope', '$sce', 'content',
   		$scope.focused = index;
   	}
 
-  	// Load available content
-  	$scope.posts = content.list();
+  	// Load available pages
+  	$scope.posts = pages.list();
 
- //  	// Sanitize HTML
+  //  	// Sanitize HTML
 	// angular.forEach($scope.posts, function(post){
 	// 	post.title = $sce.trustAsHtml(post.title);
 	// 	post.description = $sce.trustAsHtml(post.description);

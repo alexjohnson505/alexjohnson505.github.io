@@ -257,9 +257,7 @@ img.profile {
 	margin-right: 10px;
 }
 
-.post {
-
-}
+.post {}
 
 .post.container {
 	max-width: 700px;
@@ -268,6 +266,18 @@ img.profile {
 
 .four-o-four.container {
 	margin-top: 60px;
+}
+
+.serif {
+	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;	
+}
+
+.sans-serif {
+	font-family: 'Open Sans', 'Helvetica', 'Arial';
+}
+
+.sans-serif.long {
+	line-height: 36px;
 }
 
 /* Mobile */

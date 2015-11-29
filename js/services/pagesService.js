@@ -1,11 +1,11 @@
-appServices.factory('content', ['$window', function(win) {
+appServices.factory('pages', ['$window', function(win) {
    
 	// function postTemplate (name){
 	// 	return '<hr/><h2>{{title}}</h2><hr /><img src="images/preview/' + name + '.jpg"><p><i>{{{summary}}}</i></p><p>{{{description}}}</p><p>Tags: {{tags}}</p><p><a href="javascript:$.fancybox.close();">Close</a></p>';
 	// }
 
   	// List of available preview thumbnails
-  	var content = [{
+  	var pages = [{
   		//{
 		// img : "images/alex.jpg",
 		// title : "About <span>ME</span>",
@@ -110,11 +110,25 @@ appServices.factory('content', ['$window', function(win) {
 		title : "Texture <span>Report.com</span>",
 		description : "Texture Technologies' blog is a one-stop source for news in the world of texture analysis",
 	},{
-	// 	img : "images/thumbs/fire.png" ,
-	// 	link: "#gallery/fire",
-	// 	title : "Fire <span>Photography</span>",
-	// 	description : "",
-	// },{
+		slug : 'fire-photography',
+		img : "images/thumbs/fire.png" ,
+		link: "#gallery/fire",
+		title : "Fire <span>Photography</span>",
+		description : "",
+		gallery : true,
+		images : [
+			{ title : '', src : 'images/gallery/fire-beaver.jpg', thumb : 'images/gallery/fire-beaver.jpg' },
+			{ title : '', src : 'images/gallery/fire-sword.jpg', thumb : 'images/gallery/fire-sword.jpg' },
+			{ title : '', src : 'images/gallery/fire-drew.jpg', thumb : 'images/gallery/fire-drew.jpg' },
+			{ title : '', src : 'images/gallery/fire-fan.jpg', thumb : 'images/gallery/fire-fan.jpg' },
+			{ title : '', src : 'images/gallery/fire-fan-2.jpg', thumb : 'images/gallery/fire-fan-2.jpg' },
+			{ title : '', src : 'images/gallery/fire-fan-3.jpg', thumb : 'images/gallery/fire-fan-3.jpg' },
+			{ title : '', src : 'images/gallery/fire-fan-4.jpg', thumb : 'images/gallery/fire-fan-4.jpg' },
+			{ title : '', src : 'images/gallery/fire-mushroom.jpg', thumb : 'images/gallery/fire-mushroom.jpg' },
+			{ title : '', src : 'images/gallery/fire-poi.jpg', thumb : 'images/gallery/fire-poi.jpg' },
+			{ title : '', src : 'images/gallery/fire-trevor.jpg', thumb : 'images/gallery/fire-trevor.jpg' },
+		],
+	},{
 		slug : 'fitbit-challenge',
 		img : "images/thumbs/fitbit-challenge.png",
 		link: "#post/fitbit-challenge",
@@ -340,7 +354,7 @@ appServices.factory('content', ['$window', function(win) {
 			title : "Page Not Found",
 		};
 		
-		angular.forEach(content, function(value, key) {
+		angular.forEach(pages, function(value, key) {
 
   			if (value.slug === postSlug){
   				post = value;
@@ -352,7 +366,7 @@ appServices.factory('content', ['$window', function(win) {
 
 	// Return full list of posts
 	function list(){
-		return content;
+		return pages;
 	}
 
     return {

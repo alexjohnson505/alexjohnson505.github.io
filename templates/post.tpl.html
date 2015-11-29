@@ -15,8 +15,8 @@
 
 	<ul class="grid" ng-if="post.gallery">
 		<li class="mix fire" ng-repeat="image in post.images">
-			<a href="{{ image.url }}" class="fancybox" rel="fire" title="{{ image.title }}">
-				<img src="{{ image.thumb }}" />
+			<a href="{{ image.src }}" class="fancybox" rel="fire" title="{{ image.title }}" style="width: 100%; display: block; margin-bottom: 15px;">
+				<img src="{{ image.thumb }}" style="width: 100%;"/>
 			</a>
 		</li>
 	</ul>

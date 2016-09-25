@@ -1,8 +1,10 @@
 
-appControllers.controller('HomeCtrl', ['$scope', '$sce', 'pages',
-  function($scope, $sce, pages) {
+appControllers.controller('HomeCtrl', ['$rootScope', '$scope', '$sce', 'pages',
+  function($rootScope, $scope, $sce, pages) {
 
     console.log("homeCtrl.js Initialized.");
+
+    $rootScope.pageTitle = null;
 
   	// Initialize
   	$scope.focused = -1;
@@ -13,6 +15,7 @@ appControllers.controller('HomeCtrl', ['$scope', '$sce', 'pages',
 
   	// Load available pages
   	$scope.posts = pages.list();
+
 
   //  	// Sanitize HTML
 	// angular.forEach($scope.posts, function(post){

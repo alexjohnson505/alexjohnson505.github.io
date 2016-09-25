@@ -261,7 +261,7 @@ img.profile {
 
 .post.container {
 	max-width: 700px;
-	margin: 50px auto 0;
+	margin: 70px auto 0;
 }
 
 .four-o-four.container {
@@ -278,6 +278,47 @@ img.profile {
 
 .sans-serif.long {
 	line-height: 36px;
+}
+
+.featured-image {
+	margin: 0 -30px 20px;
+	
+}
+
+.featured-image img {
+	width: 100%;
+
+}
+
+.thumbnails {
+	display: block;
+
+
+}
+.thumbnails .thumb-wrapper {
+	display: inline-block;
+	width: 20%;
+}
+
+
+.thumbnails .thumb {
+	background-position: center;
+	background-size: cover;
+	height: 90px;
+	margin: 6px;
+}
+
+.thumbnails .thumb:hover {
+	opacity: .5;
+}
+
+
+.thumbnails .thumb.active {
+	border: 2px solid #FF8D00;
+}
+
+.clickable:hover {
+	cursor: pointer;
 }
 
 /* Mobile */

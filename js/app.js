@@ -5,11 +5,13 @@ var app = angular.module('app', [
   'ngRoute',
   'appControllers',
   'appFilters',
-  'appServices',
-  function(){
+  'appServices'
+]).run(['$rootScope',
+  function($rootScope) {
+
     console.log('App Initialized.');
-  }
-]);
+
+  }]);
 
 // Routes
 app.config(['$routeProvider', '$locationProvider',
@@ -19,7 +21,7 @@ app.config(['$routeProvider', '$locationProvider',
         templateUrl: 'templates/home.tpl.html',
         controller: 'HomeCtrl'
       })
-      .when('/posts/:postId', {
+      .when('/:postId', {
         templateUrl: 'templates/post.tpl.html',
         controller: 'PostCtrl'
       })

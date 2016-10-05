@@ -46,9 +46,9 @@ $ grunt serve
 
 Your local web server should now be running at ``localhost:3000``
 
-### Livereload
+### BrowserSync
 
-For front-end development, this project supports LiveReload. 
+For front-end development, this project supports BrowserSync. 
 
 * Install the [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) Chrome Browser Plugin
 * Enable LiveReload. *LiveReload has been enabled when you see a solid black dot in the plugin's icon*
@@ -70,4 +70,4 @@ For front-end development, this project supports LiveReload.
 
 ### Contributors
 
-* [Alex Johnson](https://github.com/alexjohnson505)
+* Alex Johnson -[@alexjohnson505](https://github.com/alexjohnson505)

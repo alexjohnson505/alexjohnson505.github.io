@@ -248,6 +248,8 @@ module.exports = function (grunt) {
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
             '_bower_components/jquery/jquery.min.js',
+            '_bower_components/bootstrap/dist/css/bootstrap.min.css',
+            '_bower_components/components-font-awesome/css/font-awesome.min.css',
             'favicon.ico',
             'apple-touch*.png'
           ],

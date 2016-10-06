@@ -6,6 +6,11 @@ title: Your New Jekyll Site
 <div class="container">
 
   <section class="home posts">
+    <h2>Pages</h2>
+    {% for my_page in site.pages %} {% if my_page.title %}
+      <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+    {% endif %} {% endfor %}
+
     <h1>Blog Posts</h1>
     {% for post in site.posts %}
       <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>

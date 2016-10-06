@@ -1,8 +1,8 @@
 {
-  "name": "alexjohnsonio-jekyll",
+  "name": "alexjohnson.io",
   "private": true,
-  "version": "0.0.0",
-  "description": "Yeoman workflow for alexjohnson.io jekyll",
+  "version": "0.1.0",
+  "description": "alexjohnson.io jekyll",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.5",

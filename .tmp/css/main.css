@@ -1,169 +1,141 @@
+/***************************************
+              Colors
+****************************************/
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000313}}
 html,
 button,
 input,
 select,
 textarea {
-    color: #222;
-}
+  color: #222; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000321}}
 html {
-    font-size: 1em;
-    line-height: 1.4;
-}
+  font-size: 1em;
+  line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000332}}
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000337}}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000346}}
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000360}}
 audio,
 canvas,
 img,
 svg,
 video {
-    vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000372}}
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+  border: 0;
+  margin: 0;
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000382}}
 textarea {
-    resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\0000390}}
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003105}}
 .hidden {
-    display: none !important;
-    visibility: hidden;
-}
+  display: none !important;
+  visibility: hidden; }
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003114}}
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003130}}
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003144}}
 .invisible {
-    visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Clearfix: contain floats
@@ -176,101 +148,608 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003160}}
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003166}}
 .clearfix:after {
-    clear: both;
-}
+  clear: both; }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/*
+* MIXITUP Boilerplate Template Stylesheet
+*/
+/* ------ DEFAULTS ------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003193}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003212}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003217}}
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003222}}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003226}}
+a {
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/boilerplate\.scss}line{font-family:\00003230}}
+nav li {
+  list-style-type: none;
+  display: inline-block; }
+
+/* 
+ * Ideas for Subtle Hover Effects
+ * Thanks to ___ of tmpanus.net.
+ * http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+/* 
+
+/*
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'feathericons';
+  src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
+  src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+    url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+    url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+    url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000319}}
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center; }
+
+/* Common style */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000329}}
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000343}}
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000351}}
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000360}}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000365}}
+.grid figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000373}}
+.grid figure figcaption > a {
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;*/ }
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000383}}
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000391}}
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\0000396}}
+.grid figure h2 span {
+  font-weight: 800; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003100}}
+.grid figure h2,
+.grid figure p {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003105}}
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%; }
+
+/*---------------*/
+/***** Julia *****/
+/*---------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003114}}
+figure.effect-julia {
+  background: #2f3238; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003118}}
+figure.effect-julia img {
+  max-width: none;
+  height: 400px;
+  transition: opacity .5s, -webkit-transform .5s;
+  transition: opacity .5s, transform .5s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003127}}
+figure.effect-julia figcaption {
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003131}}
+figure.effect-julia h2 {
+  position: relative;
+  padding: 0.5em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003136}}
+figure.effect-julia p {
+  display: inline-block;
+  margin: 0 0 0.25em;
+  padding: 0.4em 1em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 75%;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px, 0, 0);
+  transform: translate3d(-360px, 0, 0); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003151}}
+figure.effect-julia p:first-child {
+  transition-delay: 0.15s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003156}}
+figure.effect-julia p:nth-of-type(2) {
+  transition-delay: 0.1s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003161}}
+figure.effect-julia p:nth-of-type(3) {
+  transition-delay: 0.05s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003166}}
+figure.effect-julia:hover p:first-child {
+  transition-delay: 0s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003171}}
+figure.effect-julia:hover p:nth-of-type(2) {
+  transition-delay: 0.05s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003176}}
+figure.effect-julia:hover p:nth-of-type(3) {
+  transition-delay: 0.1s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003181}}
+figure.effect-julia:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003187}}
+figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* Media queries */
+@media screen and (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003195}}
+  .content {
+    padding: 0 10px;
+    text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/animations\.scss}line{font-family:\00003199}}
+  .grid figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%; } }
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\000037}}
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000314}}
+  a,
+  a:visited {
+    text-decoration: underline; }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000319}}
+  a[href]:after {
+    content: " (" attr(href) ")"; }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000323}}
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000331}}
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
 
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000336}}
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000342}}
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000346}}
+  tr,
+  img {
+    page-break-inside: avoid; }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000351}}
+  img {
+    max-width: 100% !important; }
 
-    img {
-        max-width: 100% !important;
-    }
+  @page {
+    margin: 0.5cm; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000359}}
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
 
-    @page {
-        margin: 0.5cm;
-    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/print\.scss}line{font-family:\0000366}}
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000315}}
+.right {
+  text-align: right; }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+/* ------ BOILERPLATE TEMPLATE ------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000321}}
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  /* prevent 'scroll-bar jump' */
+  overflow-y: scroll; }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000327}}
+h1 {
+  margin-bottom: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000330}}
+h1 strong {
+  font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000333}}
+h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000338}}
+p {
+  max-width: 750px;
+  margin: 0 auto 20px;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000345}}
+p i {
+  display: inline-block;
+  margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000349}}
+hr {
+  margin: 0 0 10px;
+  height: 0;
+  border: 0 none;
+  border-top: 1px solid #eee; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000356}}
+nav.header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 40px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.4); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000373}}
+nav.header a {
+  color: #000;
+  text-decoration: none;
+  margin: 5px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000379}}
+nav.header h1 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin: 10px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000387}}
+nav.header b {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000393}}
+nav.header .quick-links {
+  float: right;
+  margin: 5px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\0000398}}
+nav.header .quick-links i.fa {
+  font-size: 28px;
+  margin-left: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003103}}
+nav.header .quick-links i.fa:hover {
+  color: #3E5879; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003107}}
+img.profile {
+  max-width: 200px;
+  float: left;
+  display: inline-block;
+  padding: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003114}}
+.grid {
+  max-width: 1600px;
+  margin-top: 24px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003119}}
+.grid .content-block {
+  padding: 2px;
+  height: 360px;
+  max-height: 360px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003126}}
+.grid .content-block figure {
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #2f3238;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003142}}
+.grid .content-block figure img {
+  width: 100%;
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003147}}
+.grid .content-block.focused img,
+.grid .content-block.focused figcaption.preview {
+  opacity: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003152}}
+.grid .content-block.focused figcaption.details {
+  opacity: 1;
+  padding: 25px;
+  font-size: 19px;
+  line-height: 25px;
+  text-transform: initial;
+  font-weight: 200;
+  letter-spacing: .6px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003162}}
+.grid .content-block figcaption a.read-more {
+  bottom: 30px;
+  right: 30px;
+  left: 30px;
+  position: absolute;
+  padding: 12px 20px;
+  border: 1px solid #fff;
+  opacity: 1;
+  font-size: 20px;
+  text-indent: inherit;
+  display: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003178}}
+.grid .content-block.focused figcaption a.read-more {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003182}}
+.grid .content-block figcaption .read-more:hover {
+  background-color: #fff;
+  color: #2f3238; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003187}}
+.grid .content-block figcaption.details {
+  opacity: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003192}}
+.grid .content-block figcaption.details .description {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003197}}
+.grid .content-block figcaption .cta {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 15px;
+  background-color: #333;
+  z-index: 50;
+  color: #fff;
+  border: 1px solid white;
+  margin-bottom: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003207}}
+.grid .content-block figcaption .cta a {
+  color: #fff;
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003212}}
+.grid .content-block figcaption .cta:hover {
+  background-color: #fff;
+  color: #333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003217}}
+.grid .content-block figcaption .cta:hover a {
+  color: #333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003221}}
+.grid .content-block figcaption .cta .fa {
+  display: inline;
+  margin-right: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003228}}
+.post.container {
+  max-width: 700px;
+  margin: 70px auto 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003233}}
+.four-o-four.container {
+  margin-top: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003237}}
+.serif {
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003241}}
+.sans-serif {
+  font-family: 'Open Sans', 'Helvetica', 'Arial'; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003245}}
+.sans-serif.long {
+  line-height: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003249}}
+.featured-image {
+  margin: 0 -30px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003254}}
+.featured-image img {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003259}}
+.thumbnails {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003264}}
+.thumbnails .thumb-wrapper {
+  display: inline-block;
+  width: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003270}}
+.thumbnails .thumb {
+  background-position: center;
+  background-size: cover;
+  height: 90px;
+  margin: 6px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003277}}
+.thumbnails .thumb:hover {
+  opacity: .5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003282}}
+.thumbnails .thumb.active {
+  border: 2px solid #FF8D00; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003286}}
+.clickable:hover {
+  cursor: pointer; }
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003292}}
+  .grid .content-block figure {
+    float: none;
+    /* Allow Center Align */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alex\/dev\/alexjohnson505\.github\.io\/app\/_scss\/main\.scss}line{font-family:\00003296}}
+  nav.header h1 span.class {
+    display: none; } }

@@ -18,7 +18,6 @@ Development tools that you will need installed on your local computer:
 * [Grunt](...)
 * [Bower](http://bower.io/)
 
-
 ### Installing
 
 ```sh

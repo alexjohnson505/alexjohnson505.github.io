@@ -6,6 +6,8 @@
 $yellow: #fde577;
 $orange : #f6b919;
 
+$nav-height: 40px;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "boilerplate",
@@ -21,8 +23,8 @@ $orange : #f6b919;
 body {
   font-family: 'Open Sans';
   font-weight: 400;
-  /* prevent 'scroll-bar jump' */
   overflow-y: scroll;
+  padding-top: $nav-height;
 }
 h1 {
   margin-bottom: 30px;
@@ -59,7 +61,7 @@ nav.header {
   z-index: 100;
   top: 0px;
   background-color: rgba(256, 256, 256, 0.95);
-  height: 40px;
+  height: $nav-height;
   border-bottom: 1px solid #eee;
 
   -webkit-box-shadow: 0px 4px 6px -2px rgba(0,0,0,0.4);
@@ -223,7 +225,9 @@ img.profile {
   margin-right: 10px;
 }
 
-.post {}
+.post {
+  padding-top: $nav-height;
+}
 
 .post.container {
   max-width: 700px;
@@ -285,6 +289,15 @@ img.profile {
 
 .clickable:hover {
   cursor: pointer;
+}
+
+.footer {
+  margin-top: 40px;
+
+  p.copyright {
+    font-size: 12px;
+    text-align: center;    
+  }
 }
 
 /* Mobile */

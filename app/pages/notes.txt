@@ -1,0 +1,67 @@
+//  img : "images/thumbs/evertrue-email.png",
+  //  link: "#post/evertrue-email",
+  //  title : "Email <span>Campaigns</span>",
+  //  description : "",
+  //    title : "EverTrue E-mail Campaigns",
+  //    summary : "EverTrue's E-mail campaigns were a series of custom templates for e-mail marketing.",
+  //    description : "As we experimented with the success and effectiveness of email campaigns and marketing, I created a number of e-mail templates from our designer's mockups. I then ported these e-mails into hubspot and mailchimp compatible templates, where they would be used to send out mail to thousands of our users. The largest challenge was writing and testing HTML/CSS to be compatible among a wide variety of email clients. Everything from iPhone 5 and Gmail, through Outlook had to be supported",
+  //    category : "web",
+  //    tags : "EverTrue, CSS, HTML, email",
+  // ---
+
+
+
+  //  img : "images/thumbs/eventler.png",
+  //  link: "#post/eventler",
+  //  title : "EverTrue\'s <span>Eventler</span>",
+  //  description : "",
+  //    title : "EverTrue's Eventler",
+  //    summary : "EverTrue's Eventler is a event-automation and creation tool.",
+  //    description : "Eventler was a Javascript mini-tool for automating social event creation. Born during a hackathon, my team built a proof of concept tool showing that EventBrite Events, Facebook events, and e-mail marketing can be automated through a javascript web page calling various public APIs. Working alongside the PHP specialist at EverTrue, I worked to write the javascript DOM manipulation, display options to the user, and execute API calls.",
+  //    category : "web",
+  //    tags : "Web Development, EverTrue, CSS3, HTML, Javascript, jQuery, Hackathon, Bootstrap",
+  // ---
+
+
+    layout: page,
+    categories: page
+    permalink : '/firebrand-innovations.html',
+    img : "images/thumbs/firebrand-innovations.png",
+    link: "#post/firebrand-innovations",
+    title : "Firebrand <span>Innovations.com</span>",
+    description : "",
+    links : {
+      demo : "http://firebrandinnovations.com/",
+    }
+//    title : "FirebrandInnovations.com",
+  //    description : "FirebrandInnovations.com is a company flier site for Firebrand Innovations  - a growing intellectual property development startup. Future progress for Firebrand Innovations includes developments on their video conferencing technologies. While the website is currently a skeleton site and a placeholder, we're waiting on some large developments to finish unfolding before going public.",
+  //    category : "web",
+  //    tags : "Web Development, Wordpress, Web Design, Bootstrap, Javascript",
+
+  ---
+
+
+  //  img : "images/thumbs/salem-state.png",
+  //  link: "#post/salem-state",
+  //  title : "Salem State <span>Design</span>",
+  //  description : "", 
+
+  // ---
+
+    layout: page,
+    categories: page
+    permalink : '/tetris.html',
+    img : "images/thumbs/tetris.png",
+    link: "#post/tetris",
+    title : "Tetris <span>in Scheme</span>",
+    tags : "programming, scheme",
+    description : "As a challenge, I re-built Tetris in Scheme.",
+//  },
+  //    "fmap" : {
+  //    title : "Iterating over an FMap | FMap <K,V> Red/Black Tree",
+  //    description : 'A programming challenge: Design the data class and Iterator that handles iterating over a parameterized FMap. FMap is an immutable abstract data type with parameterized values that represent keys of type K to values of type V. In addition, design FMapIterator which implements Iterator and iterates over the keys of a given FMap. To download the source file (.java) right mouse click, and save the following link: <a href="download/FMap.java">Download Fmap and Iterator source file</a>',
+  //    category : "programming",
+  //    tags : "Java",
+  //  },    summary : 'Here is a fun little assignment from freshman year. Programming Tetris in Racket using DrRacket (dialect of scheme). A partner and I wrote this code as one of the final projects in an Introduction to Programming course. It is basic tetris . It has the blocks, row removal, rotation, templates, and a plethora of tests. Right & Left to move the block, A & S to rotate. To download the source file (.rkt) right mouse click, and save the following link: <a href="download/tetris_in_drracket_scheme.rkt">Download Tetris in DrRacket</a>',
+
+  }

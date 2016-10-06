@@ -61,6 +61,14 @@ For front-end development, this project supports BrowserSync.
 
 > Somewhere in there....
 
+### Image Specs
+
+> .... because I will forget
+
+- Thumbnails: 280x280
+- Post Headers: 960 x 720
+- Preview 4:3 images: 875 x [whatever]
+
 ### Built With
 
 * [Bootstrap](http://getbootstrap.com/)

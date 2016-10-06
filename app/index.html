@@ -1,51 +1,39 @@
 ---
 layout: default
 title: alexjohnson.io
+hidden: true
 ---
-
-<div class="container">
-
-  <section class="home posts">
-    <h2>Featured</h2>
-    <ul>
-      {% for post in site.categories.featured %}
-        
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-
-    <h2>Pages</h2>
-    {% for my_page in site.pages %} {% if my_page.title %}
-      <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-    {% endif %} {% endfor %}
-
-    <h1>Blog Posts</h1>
-    {% for post in site.posts %}
-      <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
-    {% endfor %}
-  </section>
-</div>
-
-<!-- <div class="grid">
-
-  <div ng-repeat="post in posts" 
-       class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12" 
-       ng-click="focus($index)"
-       ng-class="{'focused' : focused === $index }">
-
-    <figure class="effect-julia">
-      <img ng-src="{{ post.img }}">
-      <figcaption class="preview">
-        <h2 data-ng-bind-html="post.title | to_trusted"></h2>
-        <div>
-        </div>
-
-      </figcaption>
-      <figcaption class="details">
-        <div data-ng-bind-html="post.description | to_trusted" class="description"></div>
-        <a class="read-more" href="/{{post.slug}}">Read More</div>
-      </figcaption>
-    </figure>
+<div id="home">
+  <div class="header">
+    <div class="container">
+      <div class="col-sm-5">
+        <img src="/img/alex.jpg" />
+      </div>
+      <div class="col-sm-7">
+        <h1>Alex Johnson</h1>
+        <p>Developer</p>
+        <a href="/about.html">Read More</a>
+      </div>
+    </div>
   </div>
+  <div class="grid row">
+    {% for my_page in site.pages %} {% if my_page.hidden != true %}
+    <div class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <a href="{{ my_page.url | prepend: site.baseurl }}">
+        <figure class="effect-julia">
+          <img src="{{ my_page.img }}">
+          <figcaption class="preview">
+            <h2>{{ my_page.title }}</h2>
+            <div>
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <h1>Blog Posts</h1> {% for post in site.posts %}
+  <article>
+    <time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
+  {% endfor %}
 </div>
- -->

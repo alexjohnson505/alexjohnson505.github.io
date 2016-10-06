@@ -1,4 +1,4 @@
-//  img : "images/thumbs/evertrue-email.png",
+//  img : "/img/thumbs/evertrue-email.png",
   //  link: "#post/evertrue-email",
   //  title : "Email <span>Campaigns</span>",
   //  description : "",
@@ -11,7 +11,7 @@
 
 
 
-  //  img : "images/thumbs/eventler.png",
+  //  img : "/img/thumbs/eventler.png",
   //  link: "#post/eventler",
   //  title : "EverTrue\'s <span>Eventler</span>",
   //  description : "",
@@ -26,7 +26,7 @@
     layout: page,
     categories: page
     permalink : '/firebrand-innovations.html',
-    img : "images/thumbs/firebrand-innovations.png",
+    img : "/img/thumbs/firebrand-innovations.png",
     link: "#post/firebrand-innovations",
     title : "Firebrand <span>Innovations.com</span>",
     description : "",
@@ -41,7 +41,7 @@
   ---
 
 
-  //  img : "images/thumbs/salem-state.png",
+  //  img : "/img/thumbs/salem-state.png",
   //  link: "#post/salem-state",
   //  title : "Salem State <span>Design</span>",
   //  description : "", 
@@ -51,7 +51,7 @@
     layout: page,
     categories: page
     permalink : '/tetris.html',
-    img : "images/thumbs/tetris.png",
+    img : "/img/thumbs/tetris.png",
     link: "#post/tetris",
     title : "Tetris <span>in Scheme</span>",
     tags : "programming, scheme",

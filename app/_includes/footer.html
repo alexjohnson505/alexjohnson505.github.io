@@ -1,5 +1,19 @@
 <div class="footer">
   <div class="container">
+    <p><strong>Projects: </strong>
+
+    {% for page in site.pages %} {% if page.hidden != true %}
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>,
+    {% endif %} {% endfor %}
+
+    </p>
+
+    <p><strong>Posts: </strong>
+    {% for post in site.posts %}
+    <a href="{{ post.url }}">{{ post.title }}</a>, 
+    {% endfor %}
+    </p>
+
     <p class="copyright">Copyright 2016 alexjohnson.io | Boston, MA 02118</p>
   </div>
 </div>

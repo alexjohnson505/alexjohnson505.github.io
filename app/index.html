@@ -6,16 +6,35 @@ hidden: true
 <div id="home">
   <div class="header">
     <div class="container">
-      <div class="col-sm-4">
-        <img src="/img/alex.jpg" />
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="/img/alex.jpg" />
+        </div>
+        <div class="col-sm-6">
+          <h1 class="serif">Alex Johnson</h1>
+          <p class="serif">Software Engineer. Angular.js. Graduation from Northeastern University in Computer Science &amp; Interactive Media. Photographer by hobby. Currently at <a href="https://www.tablelist.com/" target="_blank">Tablelist</a> making Single Page Web Apps for Nightlife.</p>
+          <a class="serif" href="/about.html">Read More</a>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <h1 class="serif">Alex Johnson</h1>
-        <p class="serif">Software Engineer. Angular.js Focused. Graduation from Northeastern University in Computer Science &amp; Interactive Media. Photographer by hobby. Currently at <a href="https://www.tablelist.com/" target="_blank">Tablelist</a> making Single Page Web Apps for Nightlife.</p>
-        <a class="serif" href="/about.html">Read More</a>
+      <hr>
+      <div class="row">
+        <h1>Currently</h1>
+
+        <div class="col-sm-4">
+          <img src=""></div>
+        </div>
+        <div class="col-sm-8">
+          <h2>Tablelist</h2>
+          <p class="serif long">Details here....</p>
+        </div>
+        <div class="row">
+          <h1>Previously</h1>
+        </div>
       </div>
     </div>
   </div>
+
+
   <div class="grid row">
     {% for my_page in site.pages %} {% if my_page.hidden != true %}
     <div class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">

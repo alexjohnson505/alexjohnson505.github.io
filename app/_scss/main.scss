@@ -91,7 +91,7 @@ img.profile {
     padding: 80px 0 60px;
     background-color: #fff;
 
-    img {
+    img.alex {
       width: 150px;
       margin-top: 40px;
       border-radius: 100px;
@@ -108,13 +108,23 @@ img.profile {
       border-bottom: 1px solid #102c34;
       font-size: 18px;
       font-weight: 400;
-      &:hover {
+      &:hover, 
+      &:focus {
+        opacity: .6;
         text-decoration: none;
       }
     }
     hr {
       margin: 35px 45px;
       border-bottom: 1px solid #102c34;
+      opacity: .5;
+    }
+  }
+
+  .currently {
+    img {
+      height: 450px;
+      float: right;      
     }
   }
 

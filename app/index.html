@@ -8,7 +8,7 @@ hidden: true
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <img src="/img/alex.jpg" />
+          <img class="alex" src="/img/alex.jpg" />
         </div>
         <div class="col-sm-6">
           <h1 class="serif">Alex Johnson</h1>
@@ -17,24 +17,17 @@ hidden: true
         </div>
       </div>
       <hr>
-      <div class="row">
-        <h1>Currently</h1>
-
-        <div class="col-sm-4">
-          <img src=""></div>
+      <div class="row currently">
+        <div class="col-sm-6">
+          <img src="/img/tablelist-empire.png">
         </div>
-        <div class="col-sm-8">
-          <h2>Tablelist</h2>
-          <p class="serif long">Details here....</p>
-        </div>
-        <div class="row">
-          <h1>Previously</h1>
+        <div class="col-sm-6">
+          <h2 class="serif">Currently at Tablelist</h2>
+          <p class="serif long">Software Engineer on the product team. Focused on the Angular.js web app. Booking, embedded widgets, whitelabel experiences... etc</p>
         </div>
       </div>
     </div>
   </div>
-
-
   <div class="grid row">
     {% for my_page in site.pages %} {% if my_page.hidden != true %}
     <div class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">

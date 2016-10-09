@@ -358,23 +358,6 @@ nav.header {
   }
 }
 
-.ekko-lightbox.modal.fade.in {
-  background-color: rgba(0,0,0,.8);
-}
-.modal-header {
-  display: none;
-
-
-}
-.modal-backdrop {
-  background-color: red;
-}
-.modal-body, 
-.modal-footer {
-  padding: 0 !important;
-}
-
-
 /* ------ Responsive Breakpoints ------ */
 
 @media screen and (max-width: 767px) {

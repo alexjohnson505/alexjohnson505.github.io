@@ -83,6 +83,28 @@ img.profile {
   cursor: pointer;
 }
 
+.margin-top-1em {
+  margin-top: 1em;
+}
+
+.margin-top-2em {
+  margin-top: 2em;
+}
+
+.margin-bottom-1em {
+  margin-bottom: 1em;
+}
+
+.margin-bottom-2em {
+  margin-bottom: 2em;
+}
+
+.line-break {
+   margin: 20px auto 0;
+   display: block;
+   max-width: 140px;
+}
+
 /* ------ Home ------ */
 
 #home {
@@ -130,6 +152,7 @@ img.profile {
 
   .grid {
     max-width: 1600px;
+    margin: 0 auto;
     padding-top: 0;
   }
 
@@ -311,6 +334,12 @@ nav.header {
 
 .footer {
   margin-top: 40px;
+
+  hr {
+    margin: 20px auto 40px;
+
+  }
+  
 
   a {
     &:hover {

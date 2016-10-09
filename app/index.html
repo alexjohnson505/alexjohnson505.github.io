@@ -12,38 +12,42 @@ hidden: true
         </div>
         <div class="col-sm-6">
           <h1 class="serif">Alex Johnson</h1>
-          <p class="serif">Software Engineer. Angular.js. Graduation from Northeastern University in Computer Science &amp; Interactive Media. Photographer by hobby. Currently at <a href="https://www.tablelist.com/" target="_blank">Tablelist</a> making Single Page Web Apps for Nightlife.</p>
-          <a class="serif" href="/about.html">Read More</a>
+          <p class="serif">Software Engineer. Specializing in Javascript &amp; Angular.js. Graduated from Northeastern University in 2015 with a degree in Computer Science &amp; Interactive Media. Photographer by hobby. When not writing JS, I'm either biking around Boston or playing Ultimate Frisee. Currently at <a href="https://www.tablelist.com/" target="_blank">Tablelist</a> making Single Page Web Apps for Nightlife.</p>
+          <a class="serif" href="/tablelist-com.html">Read More</a>
         </div>
       </div>
+      <br><br>
       <hr>
-      <div class="row currently">
+      <!-- <div class="row currently">
         <div class="col-sm-6">
-          <img src="/img/tablelist-empire.png">
+          
         </div>
         <div class="col-sm-6">
           <h2 class="serif">Currently at Tablelist</h2>
           <p class="serif long">Software Engineer on the product team. Focused on the Angular.js web app. Booking, embedded widgets, whitelabel experiences... etc</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
-  <div class="grid row">
+
+
+<div class="grid row">
     {% for my_page in site.pages %} {% if my_page.hidden != true %}
-    <div class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <a href="{{ my_page.url | prepend: site.baseurl }}">
-        <figure class="effect-julia">
-          <img src="{{ my_page.img }}">
-          <figcaption class="preview">
-            <h2>{{ my_page.title }}</h2>
-            <div>
-            </div>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
+      <div class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a href="{{ my_page.url | prepend: site.baseurl }}">
+          <figure class="effect-julia">
+            <img src="{{ my_page.img }}">
+            <figcaption class="preview">
+              <h2>{{ my_page.title }}</h2>
+              <div>
+              </div>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
     {% endif %} {% endfor %}
   </div>
+
   <h1>Blog Posts</h1> {% for post in site.posts %}
   <article>
     <time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>

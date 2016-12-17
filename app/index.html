@@ -1,7 +1,7 @@
----
+--- 
 layout: default
-title: alexjohnson.io
-hidden: true
+title: alexjohnson.io 
+hidden: true 
 ---
 <div id="home">
   <div class="header">
@@ -16,30 +16,84 @@ hidden: true
           <a class="serif" href="/tablelist-com.html">Read More</a>
         </div>
       </div>
-      <br><br>
+      <br>
+      <br>
       <hr>
     </div>
   </div>
-  <div class="grid row">
-    {% for my_page in site.pages %} {% if my_page.hidden != true %}
-      <div class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <a href="{{ my_page.url | prepend: site.baseurl }}">
+  <div class="container">
+    <!-- Galleries -->
+    <h1 class="serif">Photography</h1>
+    <div class="grid row">
+      <div class="content-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="/botswana.html">
           <figure class="effect-julia">
-            <div class="background-image" style="background-image: url('{{ my_page.img }}')">
-            <figcaption class="preview">
-              <h2>{{ my_page.title }}</h2>
-              <h2>{{ my_page.hidden }}</h2>
-              <div>
-              </div>
-            </figcaption>
+            <div class="background-image" style="background-image: url('//alexjohnson-io.imgix.net/images/gallery/botswana/IMG_2725_2.jpg?w=500')">
+              <figcaption class="preview">
+                <h2>Botswana &amp; South Africa</h2>
+                <h2></h2>
+                <div>
+                </div>
+              </figcaption>
+            </div>
           </figure>
         </a>
       </div>
-    {% endif %} {% endfor %}
+      <div class="content-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="/thailand.html">
+          <figure class="effect-julia">
+            <div class="background-image" style="background-image: url('//alexjohnson-io.imgix.net/images/gallery/thailand/DSC_3661.jpg?w=500')">
+              <figcaption class="preview">
+                <h2>Thailand</h2>
+                <h2></h2>
+                <div>
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="content-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="/fire-photography.html">
+          <figure class="effect-julia">
+            <div class="background-image" style="background-image: url('//alexjohnson-io.imgix.net/images/gallery/fire-performance/fire-fan-3.jpg?w=500')">
+              <figcaption class="preview">
+                <h2>Fire Performance</h2>
+                <h2></h2>
+                <div>
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </a>
+      </div>
+    </div>
+    <!-- Pages -->
+    <br><br>
+    <h1 class="serif">Software</h1>
+    <div class="grid row">
+      {% for page in site.pages %}
+      {% if page.hidden != true %}
+      <div class="content-block col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="{{ page.url | prepend: site.baseurl }}">
+          <figure class="effect-julia">
+            <div class="background-image" style="background-image: url('{{ page.img }}')">
+              <figcaption class="preview">
+                <h2>{{ page.title }}</h2>
+                <h2>{{ page.hidden }}</h2>
+                <div>
+                </div>
+              </figcaption>
+          </figure>
+        </a>
+      </div>
+        {% endif %} {% endfor %}
+    </div>
+    <!-- Posts -->
+    <br><br>
+    <h1 class="serif">Posts</h1> {% for post in site.posts %}
+    <article>
+      <time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
+      {% endfor %}
   </div>
-
-  <h1>Blog Posts</h1> {% for post in site.posts %}
-  <article>
-    <time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
-  {% endfor %}
 </div>

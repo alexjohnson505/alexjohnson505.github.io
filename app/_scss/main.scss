@@ -163,8 +163,16 @@ img.profile {
     overflow: hidden;
   }
 
-  .content-block figure {
+  .content-block .background-image {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 
+  .content-block figure {
     position: relative;
     float: left;
     width: 100%;
@@ -178,11 +186,6 @@ img.profile {
     min-width: 320px;
     max-width: 480px;
     max-height: 360px;
-  }
-
-  .content-block figure img {
-    width: 100%;
-    // height: 100%;
   }
 }
 

@@ -8,7 +8,7 @@ hidden: true
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <img class="alex" src="/img/alex.jpg" />
+          <img class="alex" src="//alexjohnson-io.imgix.net/images/alex.jpg?w=150" />
         </div>
         <div class="col-sm-6">
           <h1 class="serif">Alex Johnson</h1>
@@ -18,27 +18,17 @@ hidden: true
       </div>
       <br><br>
       <hr>
-      <!-- <div class="row currently">
-        <div class="col-sm-6">
-          
-        </div>
-        <div class="col-sm-6">
-          <h2 class="serif">Currently at Tablelist</h2>
-          <p class="serif long">Software Engineer on the product team. Focused on the Angular.js web app. Booking, embedded widgets, whitelabel experiences... etc</p>
-        </div>
-      </div> -->
     </div>
   </div>
-
-
-<div class="grid row">
+  <div class="grid row">
     {% for my_page in site.pages %} {% if my_page.hidden != true %}
       <div class="content-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <a href="{{ my_page.url | prepend: site.baseurl }}">
           <figure class="effect-julia">
-            <img src="{{ my_page.img }}">
+            <div class="background-image" style="background-image: url('{{ my_page.img }}')">
             <figcaption class="preview">
               <h2>{{ my_page.title }}</h2>
+              <h2>{{ my_page.hidden }}</h2>
               <div>
               </div>
             </figcaption>

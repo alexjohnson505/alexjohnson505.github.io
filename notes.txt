@@ -1,0 +1,110 @@
+
+
+
+
+Tablelist
+
+
+
+Internal tools for analytics, marketing, data management, and client relations. Open source angular.js directives for rapid development of data management single
+
+
+EverTrue
+
+EverTrue creates networking and data management solutions for non-profit organizations and higher education. Their goal is to leverage social data to create stronger alumni relationships. EverTrue also creates data analytics tools for fundraisers and prospect research. 
+
+I worked on the AMP team. Admin Management Portal. A Backbone.js powered web app for configuring customizable white labeled social mobile app. The goal was to give this suite of tools to university alumni offices and allow them to create a network and communication channel for their alumni to stay in touch with each other. 
+
+EverTrue Portal
+Tech: Javascript, Backbone.js, PHP, MySQL
+  Configuration and data management tools for alumni engagement mobile apps.
+
+EverTrue LinkedIn Grader
+  Lead generation tool for comparing the engagement of LinkedIn groups.
+
+EverTrue FitBit Challenge
+  Competitive leaderboard for FitBit activity.
+
+EverTrue Email Campaign
+  Marketing and re-engagement email templates.
+
+
+Texture Technologies
+
+Texture Technologies is the North American distributor for the TA.XT2 family of Texture Analysers -  high precision equipment for testing consistency testing as well as research and
+development. Texture Technologies provides equipment, training, support, and customized solutions to companies in every industry from food, pharma, packaging....
+
+What did you work on?
+
+Texturetechnologies.com I
+Tech: Jekyll, Gulp
+
+Texturetechnologies.com II
+Tech: PHP, MySQL
+
+Training.texturetechnologies.com
+Tech: Javascript, PHP
+
+Video training platform for TA.XT2 Texture Analyzer users.
+
+Various branding and design work.
+
+
+Interactive Media Capstone
+
+
+As a senior at Northeastern, I lead a team of designers and developers to create a platform for 
+visualizing geo-locational data sets. Our goal was to provide an interface for creating visual correlations between data sets such as rent prices, census data, public transportation, and social activity. 
+
+Data Visualization Capstone
+Tech: D3.js, Leaflet.js, Javascript, Bower
+  Interactive data visualization library for implementing D3.js visualizations in leaflet maps.
+
+Data Visualization Capstone API
+Tech: Node, MongoDB
+  Bulk data processing for uploading and parsing location history data.
+
+Context for descriptions:
+- what is the company
+- what is the project?
+- what was my role?
+- what was the challenge?
+
+
+
+Photography
+
+Africa Photography
+
+Thailand Photography
+  Photographs from a month in Thailand.
+
+Fire Photography
+  High-speed photography for fire performance.
+
+Macro & Portrait Photography
+  Studio photography for people and products.
+
+Misc. Projects
+
+
+
+Software Development - Game Player Data Visualization
+Tech: Leaflet.js, D3.js, Node.js
+Interactive visualization of players spacial behaviour in digital environments.
+
+Craig Reynold's Swarm AI
+Tech: Processing, Java, Javascript
+  Interactive demonstration of Craig Reynold's swarm behaviour AI algorithms.
+
+clintvalentine.com
+  Personal site and blog for photographer, climber and scientist.
+
+Firebrandinnovations.com & branding
+  Marketing site for patented video conferencing technology.
+
+Arduino & Quadcopter
+  Research and development for Rasberry Pi & Arduino powered Quadcopters.
+
+
+

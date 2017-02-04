@@ -2,7 +2,7 @@
   <div class="container">
     <hr>
     
-    <p><strong>Projects: </strong>
+    <p class="serif"><strong>Projects: </strong>
 
     {% for page in site.pages %} {% if page.hidden != true %}
     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>,
@@ -10,7 +10,7 @@
 
     </p>
 
-    <p><strong>Posts: </strong>
+    <p class="serif"><strong>Posts: </strong>
     {% for post in site.posts %}
     <a href="{{ post.url }}">{{ post.title }}</a>, 
     {% endfor %}

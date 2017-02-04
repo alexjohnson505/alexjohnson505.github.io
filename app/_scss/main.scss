@@ -54,8 +54,7 @@ body {
     text-align: left;
     line-height: 1.6;
     i {
-      display: inline-block;
-      margin-bottom: 10px;
+      // display: inline-block;
     }
   }
   hr {
@@ -83,7 +82,11 @@ img.profile {
 
   &.long {
     max-width: 550px;
-    margin: 0 auto 10px;
+    margin: 0 auto 1.6em;
+  }
+
+  &.strong {
+    font-weight: 600;
   }
 }
 
@@ -368,11 +371,18 @@ nav.top {
   }
 
   p.copyright {
+    padding-top: 30px;
+    padding-bottom: 20px;
     font-size: 12px;
     text-align: center;    
   }
 }
 
+.debug {
+  * {
+    border: 1px dashed orange !important;
+  }
+}
 /* ------ Responsive Breakpoints ------ */
 
 @media screen and (max-width: 767px) {

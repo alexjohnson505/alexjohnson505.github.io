@@ -85,6 +85,13 @@ img.profile {
     margin: 0 auto 1.6em;
   }
 
+  &.quote {
+    max-width: 480px;
+    margin: 0 auto 1.6em;
+    font-style: italic;
+    text-indent: 1.6em;
+  }
+
   &.strong {
     font-weight: 600;
   }
@@ -95,6 +102,15 @@ img.profile {
   
   &.long {
     line-height: 36px;
+  }
+}
+
+img {
+  &.center {
+    max-width: 200px;
+    margin: 30px auto 40px;
+    display: block;
+
   }
 }
 

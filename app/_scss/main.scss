@@ -8,6 +8,8 @@ $orange : #f6b919;
 
 $nav-height: 40px;
 
+$page-width: 550px;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "boilerplate",
@@ -81,12 +83,13 @@ img.profile {
   font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;  
 
   &.long {
-    max-width: 550px;
+    max-width: $page-width;
     margin: 0 auto 1.6em;
+    text-indent: 1em;
   }
 
   &.quote {
-    max-width: 480px;
+    max-width: $page-width - 70px;
     margin: 0 auto 1.6em;
     font-style: italic;
     text-indent: 1.6em;
@@ -102,15 +105,6 @@ img.profile {
   
   &.long {
     line-height: 36px;
-  }
-}
-
-img {
-  &.center {
-    max-width: 200px;
-    margin: 30px auto 40px;
-    display: block;
-
   }
 }
 
@@ -220,24 +214,46 @@ img {
 /* ------ Content Page ------ */
 
 .page {
-  padding-top: $nav-height;
 
-  .header {
-    height: 300px;
-    margin-bottom: 40px;
-    .img {
-      position: relative;
-      background-position: center;
-      background-position: center;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+  margin-top: 50px;
+
+  img {
+    &.logo {
+      max-width: 200px;
+      margin: 30px auto 40px;
+      display: block;
+
+    }
+    &.full {
+      max-width: $page-width;
+      display: block;
+      margin: 0 auto;
     }
   }
 
+  a.fancybox {
+    max-width: $page-width;
+    margin: 0 auto 1.6em;
+    display: block;
+    border-bottom: none;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-with-image {
+    max-width: $page-width;
+    margin: 0 auto;
+
+    img {
+      margin-left: 20px;
+      max-width: 350px;
+      float: right;
+      margin-right: -139px;
+      margin-top: -20px;
+    }
+  }
 }
 
 /* ------ Gallery ------ */

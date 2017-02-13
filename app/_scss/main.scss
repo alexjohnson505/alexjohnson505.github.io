@@ -6,6 +6,8 @@
 $yellow: #fde577;
 $orange : #f6b919;
 
+$tablelist-green: #42bcb0;
+
 $nav-height: 40px;
 
 $page-width: 550px;
@@ -215,7 +217,27 @@ img.profile {
 
 .page {
 
-  margin-top: 50px;
+  overflow: hidden;
+
+  // padding-top: 50px;
+
+  .header {
+    padding-top: 50px;
+    position: relative;
+    
+  }
+
+  .header-bg {
+    webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    background-color: $tablelist-green;
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    bottom: 120px;;
+    left: -50px;
+    right: -50px;
+  }
 
   img {
     &.logo {
@@ -232,26 +254,13 @@ img.profile {
   }
 
   a.fancybox {
-    max-width: $page-width;
+    max-width: $page-width + 100px;
     margin: 0 auto 1.6em;
     display: block;
     border-bottom: none;
 
     img {
       width: 100%;
-    }
-  }
-
-  .text-with-image {
-    max-width: $page-width;
-    margin: 0 auto;
-
-    img {
-      margin-left: 20px;
-      max-width: 350px;
-      float: right;
-      margin-right: -139px;
-      margin-top: -20px;
     }
   }
 }

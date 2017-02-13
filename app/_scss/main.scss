@@ -51,15 +51,27 @@ body {
       border-bottom: 1px solid $orange;
       text-decoration: none !important;
     }
+    &.light {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+
+    }
   }
   p {
     margin: 0 auto 20px;
     font-size: 18px;
     text-align: left;
     line-height: 1.6;
+    
     i {
       // display: inline-block;
     }
+
+    &.light {
+      font-weight: 100;
+      color: #fff;
+    }
+
   }
   hr {
     margin: 0 0 10px;
@@ -224,7 +236,6 @@ img.profile {
   .header {
     padding-top: 50px;
     position: relative;
-    
   }
 
   .header-bg {
@@ -418,6 +429,18 @@ nav.top {
     text-align: center;    
   }
 }
+
+.hidden-sm {
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+}
+
+// .hidden-xs {
+//   @media screen and (max-width: 315px) {
+//     display: none;
+//   }
+// }
 
 .debug {
   * {

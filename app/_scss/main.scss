@@ -1,15 +1,17 @@
 
 /***************************************
-              Colors
+          alexjohnson.io
+              Styles
 ****************************************/
+
+/* ------ Globals : Colors ------ */
 
 $yellow: #fde577;
 $orange : #f6b919;
-
 $tablelist-green: #42bcb0;
+$nightpro-grey: #333;
 
 $nav-height: 40px;
-
 $page-width: 550px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -62,10 +64,6 @@ body {
     font-size: 18px;
     text-align: left;
     line-height: 1.6;
-    
-    i {
-      // display: inline-block;
-    }
 
     &.light {
       font-weight: 100;
@@ -79,18 +77,6 @@ body {
     border: 0 none;
     border-top: 1px solid #eee;
   }
-}
-
-img.profile {
-  max-width: 200px;
-  float: left;
-  display: inline-block;
-  padding: 20px;
-}
-
-.center {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .serif {
@@ -122,36 +108,6 @@ img.profile {
   }
 }
 
-.right {
-  text-align: right;
-}
-
-.clickable:hover {
-  cursor: pointer;
-}
-
-.margin-top-1em {
-  margin-top: 1em;
-}
-
-.margin-top-2em {
-  margin-top: 2em;
-}
-
-.margin-bottom-1em {
-  margin-bottom: 1em;
-}
-
-.margin-bottom-2em {
-  margin-bottom: 2em;
-}
-
-.line-break {
-   margin: 20px auto 0;
-   display: block;
-   max-width: 140px;
-}
-
 /* ------ Home ------ */
 
 #home {
@@ -159,6 +115,14 @@ img.profile {
   .header {
     padding: 80px 0 60px;
     background-color: #fff;
+
+
+    img.profile {
+      max-width: 200px;
+      float: left;
+      display: inline-block;
+      padding: 20px;
+    }
 
     img.alex {
       width: 150px;
@@ -228,24 +192,43 @@ img.profile {
 /* ------ Content Page ------ */
 
 .page {
-
   overflow: hidden;
 
-  // padding-top: 50px;
-
-  .header {
+  .marquee {
     padding-top: 50px;
     position: relative;
+
+    &.nightpro {
+      .background {
+        background-color: $nightpro-grey; 
+      }
+    }
+
+    &.tablelist {
+      .background {
+        background-color: $tablelist-green; 
+      }
+    }
+
+    &.swarm {
+      .background {
+        background: url('/img/upload/swarm-navigation-v1.3.png');
+        background-size: cover;
+        bottom: 0;
+        webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+      }
+    }
   }
 
-  .header-bg {
+  .background {
     webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
-    background-color: $tablelist-green;
+    background-color: #eee;
     position: absolute;
     z-index: -1;
     top: -50px;
-    bottom: 120px;;
+    bottom: 120px;
     left: -50px;
     right: -50px;
   }
@@ -307,46 +290,7 @@ img.profile {
   padding-top: $nav-height;
 }
 
-
-// .featured-image {
-//   margin: 0 -30px 20px;
-  
-// }
-
-// .featured-image img {
-//   width: 100%;
-
-// }
-
-// .thumbnails {
-//   display: block;
-
-
-// }
-// .thumbnails .thumb-wrapper {
-//   display: inline-block;
-//   width: 20%;
-// }
-
-
-// .thumbnails .thumb {
-//   background-position: center;
-//   background-size: cover;
-//   height: 90px;
-//   margin: 6px;
-// }
-
-// .thumbnails .thumb:hover {
-//   opacity: .5;
-// }
-
-
-// .thumbnails .thumb.active {
-//   border: 2px solid #FF8D00;
-// }
-
 /* ------ Header ------ */
-
 
 nav.top {
   width: 100%;
@@ -378,8 +322,8 @@ nav.top {
 
   b {
     font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: -1px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
   }
 
   .quick-links {
@@ -400,19 +344,18 @@ nav.top {
 
 /* ------ Footer ------ */
 
-.footer {
+nav.footer {
   margin-top: 40px;
 
   hr {
     margin: 20px auto 40px;
-
   }
-  
 
   a {
+    border: none;
+
     &:hover {
       text-decoration: none;
-
     }
   }
 
@@ -430,26 +373,50 @@ nav.top {
   }
 }
 
+/* ------ Utility ------ */
+
 .hidden-sm {
   @media screen and (max-width: 400px) {
     display: none;
   }
 }
 
-// .hidden-xs {
-//   @media screen and (max-width: 315px) {
-//     display: none;
-//   }
-// }
-
 .debug {
   * {
     border: 1px dashed orange !important;
   }
 }
-/* ------ Responsive Breakpoints ------ */
-
-@media screen and (max-width: 767px) {
-
+.center {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.right {
+  text-align: right;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.margin-top-1em {
+  margin-top: 1em;
+}
+
+.margin-top-2em {
+  margin-top: 2em;
+}
+
+.margin-bottom-1em {
+  margin-bottom: 1em;
+}
+
+.margin-bottom-2em {
+  margin-bottom: 2em;
+}
+
+.line-break {
+   margin: 20px auto 0;
+   display: block;
+   max-width: 140px;
+}

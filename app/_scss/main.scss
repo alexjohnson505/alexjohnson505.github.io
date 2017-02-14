@@ -246,6 +246,18 @@ body {
         transform: rotate(-3deg);
       }
     }
+
+    &.texture-technologies {
+      .background {
+        background-color: #299dcc;
+      }
+    }
+
+    &.evertrue {
+      .background {
+        background-color: #72c267;
+      }
+    }
   }
 
   .background {
@@ -258,6 +270,18 @@ body {
     bottom: 120px;
     left: -50px;
     right: -50px;
+  }
+
+  .swarm-background {
+    background: url(/img/upload/swarm-background.png);
+    position: relative;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 700px;
+    margin-top: -700px;
+    opacity: .2;
   }
 
   img {

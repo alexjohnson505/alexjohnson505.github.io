@@ -1,4 +1,8 @@
 
+For each?
+  - story
+  - my role
+  - how its built
 
 
 

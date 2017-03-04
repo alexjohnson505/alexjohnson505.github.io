@@ -272,18 +272,6 @@ body {
     right: -50px;
   }
 
-  .swarm-background {
-    background: url(/img/upload/swarm-background.png);
-    position: relative;
-    bottom: -40px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 700px;
-    margin-top: -700px;
-    opacity: .2;
-  }
-
   img {
     &.logo {
       max-width: 200px;

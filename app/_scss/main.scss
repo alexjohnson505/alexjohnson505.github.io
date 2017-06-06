@@ -36,6 +36,13 @@ body {
       font-weight: 700;
     }
   }
+  h2 {
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;  
+    letter-spacing: -2px;
+    font-size: 40px;
+    max-width: $page-width;
+    margin: 0 auto .6em;
+  }
   h3 {
     margin-bottom: 20px;
     font-weight: 600;
@@ -45,6 +52,8 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .8px;
+    max-width: $page-width;
+    margin: 0 auto 1em;
   }
   a {
     color: #102c34;
@@ -107,19 +116,14 @@ body {
   }
 }
 
-.page {
-  h2 {
-    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;  
-    letter-spacing: -2px;
-    font-size: 40px;
-    max-width: $page-width;
-    margin: 0 auto .6em;
-  }
-  h5 {
-    max-width: $page-width;
-    margin: 0 auto 1em;
-  }
-}
+
+  // h2 {
+
+  // }
+  // h5 {
+
+  // }
+
 
 /* ------ Home ------ */
 

@@ -41,6 +41,11 @@ body {
     font-weight: 600;
     text-align: left;
   }
+  h5 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .8px;
+  }
   a {
     color: #102c34;
     border-bottom: 1px solid #102c34;
@@ -99,6 +104,20 @@ body {
   
   &.long {
     line-height: 36px;
+  }
+}
+
+.page {
+  h2 {
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;  
+    letter-spacing: -2px;
+    font-size: 40px;
+    max-width: $page-width;
+    margin: 0 auto .6em;
+  }
+  h5 {
+    max-width: $page-width;
+    margin: 0 auto 1em;
   }
 }
 
@@ -206,6 +225,9 @@ body {
         text-transform: uppercase;
         text-align: center;
         text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+        letter-spacing: 0;
+        font-size: 30px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
         span {
           font-weight: 800;

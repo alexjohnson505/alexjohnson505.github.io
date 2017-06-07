@@ -53,7 +53,7 @@ body {
     font-weight: 500;
     letter-spacing: .8px;
     max-width: $page-width;
-    margin: 0 auto 1em;
+    margin: 0 auto 3px;
   }
   a {
     color: #102c34;
@@ -124,7 +124,9 @@ body {
   padding: 10px 12px 7px;
   border: 1px solid $orange;
   color: $orange;
-  display: inline;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 22px;
 
   &:hover {
     border-color: #000;
@@ -179,12 +181,14 @@ body {
       max-width: 100%;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 11px;
     }
 
     h2 {
       max-width: 100%;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 19px;
     }
   }
 
@@ -293,7 +297,8 @@ body {
 
     &.swarm {
       .background {
-        background: url('/img/upload/swarm-navigation-v1.3.png');
+        // background: url('/img/upload/swarm-navigation-v1.3.png');
+        background-color: #000;
         background-size: cover;
         bottom: 0;
         webkit-transform: rotate(-3deg);
@@ -308,6 +313,11 @@ body {
     }
 
     &.evertrue {
+      .background {
+        background-color: #72c267;
+      }
+    }
+    &.g-player {
       .background {
         background-color: #72c267;
       }

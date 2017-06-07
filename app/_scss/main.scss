@@ -116,13 +116,22 @@ body {
   }
 }
 
+.highlight {
+  color: $orange;
+}
 
-  // h2 {
+.button {
+  padding: 10px 12px 7px;
+  border: 1px solid $orange;
+  color: $orange;
+  display: inline;
 
-  // }
-  // h5 {
+  &:hover {
+    border-color: #000;
+    color: #000;
+  }
+}
 
-  // }
 
 
 /* ------ Home ------ */
@@ -152,50 +161,32 @@ body {
     }
   }
 
-  .currently {
-    img {
-      height: 450px;
-      float: right;      
+  .resume {
+    max-width: 950px;
+    margin: 0 auto;
+
+    .resume-item {
+      margin-bottom: 40px;
+
+    }
+
+    .dates {
+      float: right;
+      font-style: italic;
+    }
+
+    h5 {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
-
-  // .grid {
-  //   max-width: 1600px;
-  //   margin: 0 auto;
-  //   padding-top: 0;
-  // }
-
-  // .content-block {
-  //   padding: 2px;
-  //   height: 360px;
-  //   max-height: 360px;
-  //   overflow: hidden;
-  // }
-
-  // .content-block .background-image {
-  //   background-size: cover;
-  //   position: absolute;
-  //   top: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  // }
-
-  // .content-block figure {
-  //   position: relative;
-  //   float: left;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: #2f3238;
-  //   text-align: center;
-  //   cursor: pointer;
-
-  //   overflow: hidden;
-  //   margin: 0;
-  //   min-width: 320px;
-  //   max-width: 480px;
-  //   max-height: 360px;
-  // }
 
   .masonry {
     .brick {
@@ -251,6 +242,43 @@ body {
     padding-top: 50px;
     position: relative;
 
+    &.home {
+      margin-bottom: 90px;
+
+      .background {
+        background-color: #fff; 
+        webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+        bottom: -40px;
+      }
+
+      .about-me {
+        padding: 40px 20px;
+      }
+      
+      h1 {
+        font-weight: 100;
+        letter-spacing: 0px;
+        font-size: 56px;
+      }
+
+      p {
+        color: #fbf7f7;
+        font-size: 23px;
+        font-weight: 100;
+        letter-spacing: .2px;
+      }
+
+      h1, p, i {
+        color: #000;
+      }
+
+      img {
+        float: right;
+        width: 130%;
+      }
+    }
+
     &.nightpro {
       .background {
         background-color: $nightpro-grey; 
@@ -292,7 +320,7 @@ body {
     background-color: #eee;
     position: absolute;
     z-index: -1;
-    top: -50px;
+    top: -450px;
     bottom: 120px;
     left: -50px;
     right: -50px;

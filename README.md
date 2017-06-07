@@ -1,6 +1,6 @@
 # alexjohnson.io
 
-Jekyll powered site. [alexjohnson.io](http://alexjohnson.io). Hosted on GitHub Pages.
+Jekyll-Powered Static Site. [alexjohnson.io](http://alexjohnson.io). Hosted on GitHub Pages.
 
 Checkout my [GitHub](https://github.com/alexjohnson505)
 
@@ -53,14 +53,6 @@ For front-end development, this project supports BrowserSync.
 * Enable LiveReload. *LiveReload has been enabled when you see a solid black dot in the plugin's icon*
 * Changes should now be updated to your chrome window. LESS/CSS changes will be injected.
 
-### Running the tests
-
-> Working on it ....
-
-### And coding style tests
-
-> Somewhere in there....
-
 ### Image Specs
 
 > .... because I will forget
@@ -68,6 +60,13 @@ For front-end development, this project supports BrowserSync.
 - Thumbnails: 280x280 (???)
 - Post Headers: 960 x 720
 - Preview 4:3 images: 875 x [whatever]
+
+### Production
+
+```sh
+$ grunt build
+```
+Site will be generated. Current deploy process involved copying the generated static site into the master branch for access by GitHub pages. My goal is to eventually have a script that automatically configures the Jekyll build for GitHub Pages.
 
 ### Built With
 

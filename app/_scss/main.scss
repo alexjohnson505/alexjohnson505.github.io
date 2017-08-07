@@ -182,6 +182,10 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 11px;
+
+      @media screen and (max-width: 769px) {
+        display: none;
+      }
     }
 
     h2 {
@@ -189,6 +193,15 @@ body {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 19px;
+
+      @media screen and (max-width: 769px) {
+        margin-top: 15px;
+      }
+    }
+
+    a.button {
+      display: block;
+      text-align: center;
     }
   }
 
@@ -258,12 +271,20 @@ body {
 
       .about-me {
         padding: 40px 20px;
+        
+        @media screen and (max-width: 769px) {
+          padding: 20px 15px;
+        }
       }
       
       h1 {
         font-weight: 100;
         letter-spacing: 0px;
         font-size: 56px;
+
+        @media screen and (max-width: 769px) {
+          font-size: 42px;
+        }
       }
 
       p {
@@ -271,6 +292,10 @@ body {
         font-size: 23px;
         font-weight: 100;
         letter-spacing: .2px;
+
+        @media screen and (max-width: 769px) {
+          font-size: 18px;
+        }
       }
 
       h1, p, i {
@@ -280,6 +305,47 @@ body {
       img {
         float: right;
         width: 130%;
+      }
+
+      .cta {
+        margin-top: 30px;
+
+        a.button {
+          user-select: none;
+          width: 80%;
+          display: block;
+          text-align: center;
+          padding: 14px 10px 11px;
+          font-size: 20px;
+          margin: 0 auto;
+          background-color: #f6b919;
+          color: #fff;
+          font-weight: 400px;
+          border: 2px solid #ffcb41;
+          cursor: pointer;
+
+          &:hover {
+            border: 2px solid #f6b919;
+            background-color: #fff;
+            color: #000;
+
+          }
+        }
+
+        .resume-link {
+          padding-top: 12px;
+          float: left;
+
+          @media screen and (max-width: 769px) {
+            margin: 0 auto;
+            border-bottom: none;
+            text-align: center;
+            text-decoration: underline;
+            display: block;
+            float: none;
+          }
+
+        }
       }
     }
 
@@ -361,6 +427,14 @@ body {
     }
   }
 }
+
+/* ------ Resume ------ */
+
+.page .resume {
+  max-width: 500px;
+  margin: 90px auto;
+}
+
 
 /* ------ Gallery ------ */
 

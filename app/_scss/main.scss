@@ -84,6 +84,10 @@ body {
       color: #fff;
     }
 
+    @media screen and (max-width: 320px) {
+      font-size: 15px;
+    }
+
   }
 }
 
@@ -173,6 +177,17 @@ body {
 
     .photo-project {
       padding-right: 15px;
+
+      .preview {
+        width: 100%;
+        height: 300px;
+        background-color: #000;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 769px) {
+          height: 200px;
+        }
+      }
     }
 
     img.preview {
@@ -219,10 +234,15 @@ body {
       max-width: 100%;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 19px;
+      margin-bottom: 12px;
 
       @media screen and (max-width: 769px) {
         margin-top: 15px;
+        font-size: 30px;
+      }
+
+      @media screen and (max-width: 320px) {
+        font-size: 24px;
       }
     }
 
@@ -484,20 +504,20 @@ body {
     margin-top: 80px;
   }
 
-  h2, h4 {
+  h2, h5 {
     text-align: center;
   }
 
   a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 12px;
 
     i.fa {
       margin-right: 10px;
       font-size: 26px;
     }
-
-    display: block;
-    text-align: center;
-    margin: 0 auto;
   }
 }
 

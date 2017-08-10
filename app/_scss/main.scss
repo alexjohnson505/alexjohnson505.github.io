@@ -553,6 +553,12 @@ body {
   }
 }
 
+.fancybox-wrap {
+  a, a:hover {
+    border: none;
+  }
+}
+
 /* ------ Blog Post ------ */
 
 .post {

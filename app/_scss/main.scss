@@ -8,6 +8,7 @@
 
 $yellow: #fde577;
 $orange : #f6b919;
+$culturehq-green: #66b478;
 $tablelist-green: #42bcb0;
 $nightpro-grey: #333;
 
@@ -439,6 +440,12 @@ body {
           }
 
         }
+      }
+    }
+
+    &.culturehq {
+      .background {
+        background-color: $culturehq-green; 
       }
     }
 

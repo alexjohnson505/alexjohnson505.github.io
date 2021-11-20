@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Alex Johnson -- Software Developer -- <github.com/alexjohnson505>
+    Alex Johnson -- Product -- <github.com/alexjohnson505>
 
 # TECHNOLOGY COLOPHON
 

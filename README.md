@@ -1,4 +1,6 @@
-# alexjohnson.io
+# alexjohnson.io (2017)
+
+This project has been deprecated. Please see https://github.com/alexjohnson505/alexjohnson.io for future updates.
 
 Jekyll-Powered Static Site. [alexjohnson.io](http://alexjohnson.io). Hosted on GitHub Pages.
 
